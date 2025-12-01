@@ -1,0 +1,5900 @@
+{
+  "frames": {
+    "prod assets_andirondack_andirondack_chair_slatted_black_left": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_copper_left": {
+      "frame": {
+        "x": 32,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_darkwood_left": {
+      "frame": {
+        "x": 64,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_drabblue_left": {
+      "frame": {
+        "x": 96,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_green_left": {
+      "frame": {
+        "x": 128,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_lilac_left": {
+      "frame": {
+        "x": 160,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_mediumwood_left": {
+      "frame": {
+        "x": 192,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_orange_left": {
+      "frame": {
+        "x": 224,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_orangeyellow_left": {
+      "frame": {
+        "x": 256,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_pastelblue_left": {
+      "frame": {
+        "x": 288,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_pastelpink_left": {
+      "frame": {
+        "x": 320,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_red_left": {
+      "frame": {
+        "x": 352,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_teal_left": {
+      "frame": {
+        "x": 384,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_andirondack_andirondack_chair_slatted_white_left": {
+      "frame": {
+        "x": 416,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_apple_apple_green_leaf_1": {
+      "frame": {
+        "x": 448,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_apple_apple_green_leaf_2": {
+      "frame": {
+        "x": 480,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_apple_apple_red_1": {
+      "frame": {
+        "x": 512,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_apple_apple_red_2": {
+      "frame": {
+        "x": 544,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_apple_apple_red_leaf_1": {
+      "frame": {
+        "x": 576,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_apple_apple_red_leaf_2": {
+      "frame": {
+        "x": 608,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_apple_apple_yellow_1": {
+      "frame": {
+        "x": 640,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_apple_apple_yellow_2": {
+      "frame": {
+        "x": 672,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_apple_apple_yellow_leaf_1": {
+      "frame": {
+        "x": 704,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_apple_apple_yellow_leaf_2": {
+      "frame": {
+        "x": 736,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_black_down": {
+      "frame": {
+        "x": 768,
+        "y": 0,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_black_left": {
+      "frame": {
+        "x": 864,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_black_right": {
+      "frame": {
+        "x": 896,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_black_up": {
+      "frame": {
+        "x": 928,
+        "y": 0,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_blue_down": {
+      "frame": {
+        "x": 1024,
+        "y": 0,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_blue_left": {
+      "frame": {
+        "x": 1120,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_blue_right": {
+      "frame": {
+        "x": 1152,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_blue_up": {
+      "frame": {
+        "x": 1184,
+        "y": 0,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_darkbrown_down": {
+      "frame": {
+        "x": 1280,
+        "y": 0,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_darkbrown_leftt": {
+      "frame": {
+        "x": 1376,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_darkbrown_right": {
+      "frame": {
+        "x": 1408,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_darkbrown_up": {
+      "frame": {
+        "x": 1440,
+        "y": 0,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_green_down": {
+      "frame": {
+        "x": 1536,
+        "y": 0,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_green_left": {
+      "frame": {
+        "x": 1632,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_green_right": {
+      "frame": {
+        "x": 1664,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_green_up": {
+      "frame": {
+        "x": 1696,
+        "y": 0,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_grey_down": {
+      "frame": {
+        "x": 1792,
+        "y": 0,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_grey_left": {
+      "frame": {
+        "x": 1888,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_grey_right": {
+      "frame": {
+        "x": 1920,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_grey_up": {
+      "frame": {
+        "x": 1952,
+        "y": 0,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_lightbrown_down": {
+      "frame": {
+        "x": 0,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_lightbrown_left": {
+      "frame": {
+        "x": 96,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_lightbrown_right": {
+      "frame": {
+        "x": 128,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_lightbrown_up": {
+      "frame": {
+        "x": 160,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_mediumbrown_down": {
+      "frame": {
+        "x": 256,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_mediumbrown_left": {
+      "frame": {
+        "x": 352,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_mediumbrown_right": {
+      "frame": {
+        "x": 384,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_mediumbrown_up": {
+      "frame": {
+        "x": 416,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_orange_down": {
+      "frame": {
+        "x": 512,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_orange_left": {
+      "frame": {
+        "x": 608,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_orange_right": {
+      "frame": {
+        "x": 640,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_orange_up": {
+      "frame": {
+        "x": 672,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_purple_down": {
+      "frame": {
+        "x": 768,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_purple_left": {
+      "frame": {
+        "x": 864,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_purple_right": {
+      "frame": {
+        "x": 896,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_purple_up": {
+      "frame": {
+        "x": 928,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_red_down": {
+      "frame": {
+        "x": 1024,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_red_left": {
+      "frame": {
+        "x": 1120,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_red_right": {
+      "frame": {
+        "x": 1152,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_red_up": {
+      "frame": {
+        "x": 1184,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_teal_down": {
+      "frame": {
+        "x": 1280,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_teal_left": {
+      "frame": {
+        "x": 1376,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_teal_right": {
+      "frame": {
+        "x": 1408,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_teal_up": {
+      "frame": {
+        "x": 1440,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_white_down": {
+      "frame": {
+        "x": 1536,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_armchair_armchair_white_left": {
+      "frame": {
+        "x": 1632,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_white_right": {
+      "frame": {
+        "x": 1664,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_armchair_armchair_white_up": {
+      "frame": {
+        "x": 1696,
+        "y": 64,
+        "w": 96,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_photo": {
+      "frame": {
+        "x": 1280,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_photo_active": {
+      "frame": {
+        "x": 1312,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_pride_blue": {
+      "frame": {
+        "x": 1344,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_pride_green": {
+      "frame": {
+        "x": 1376,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_pride_grey": {
+      "frame": {
+        "x": 1408,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_pride_lilac": {
+      "frame": {
+        "x": 1440,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_pride_mediumwood": {
+      "frame": {
+        "x": 1472,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_pride_orange": {
+      "frame": {
+        "x": 1504,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_pride_pastelblue": {
+      "frame": {
+        "x": 1536,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_pride_pink": {
+      "frame": {
+        "x": 1568,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_pride_red": {
+      "frame": {
+        "x": 1600,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_pride_white": {
+      "frame": {
+        "x": 1632,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_pride_yellow": {
+      "frame": {
+        "x": 1664,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_text": {
+      "frame": {
+        "x": 1696,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book_text_active": {
+      "frame": {
+        "x": 1728,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book1": {
+      "frame": {
+        "x": 1760,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book10": {
+      "frame": {
+        "x": 1792,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book11": {
+      "frame": {
+        "x": 1824,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book12": {
+      "frame": {
+        "x": 1856,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book13": {
+      "frame": {
+        "x": 1888,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book14": {
+      "frame": {
+        "x": 1920,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book15": {
+      "frame": {
+        "x": 1952,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book16": {
+      "frame": {
+        "x": 1984,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book17": {
+      "frame": {
+        "x": 2016,
+        "y": 128,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book18": {
+      "frame": {
+        "x": 0,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book2": {
+      "frame": {
+        "x": 32,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book3": {
+      "frame": {
+        "x": 64,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book4": {
+      "frame": {
+        "x": 96,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book5": {
+      "frame": {
+        "x": 128,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book6": {
+      "frame": {
+        "x": 160,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book7": {
+      "frame": {
+        "x": 192,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book8": {
+      "frame": {
+        "x": 224,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_book_book9": {
+      "frame": {
+        "x": 256,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_1": {
+      "frame": {
+        "x": 1728,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_10": {
+      "frame": {
+        "x": 1760,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_11": {
+      "frame": {
+        "x": 1792,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_12": {
+      "frame": {
+        "x": 1824,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_13": {
+      "frame": {
+        "x": 1856,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_14": {
+      "frame": {
+        "x": 1888,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_2": {
+      "frame": {
+        "x": 1920,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_3": {
+      "frame": {
+        "x": 1952,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_4": {
+      "frame": {
+        "x": 1984,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_5": {
+      "frame": {
+        "x": 2016,
+        "y": 160,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_6": {
+      "frame": {
+        "x": 0,
+        "y": 224,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_7": {
+      "frame": {
+        "x": 32,
+        "y": 224,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_8": {
+      "frame": {
+        "x": 64,
+        "y": 224,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_fancy_side_9": {
+      "frame": {
+        "x": 96,
+        "y": 224,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_green_down": {
+      "frame": {
+        "x": 576,
+        "y": 224,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_green_left": {
+      "frame": {
+        "x": 608,
+        "y": 224,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_green_right": {
+      "frame": {
+        "x": 640,
+        "y": 224,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_green_up": {
+      "frame": {
+        "x": 672,
+        "y": 224,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_office_rolling_black_down": {
+      "frame": {
+        "x": 704,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_black_left": {
+      "frame": {
+        "x": 736,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_black_right": {
+      "frame": {
+        "x": 768,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_black_up": {
+      "frame": {
+        "x": 800,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_blue_down": {
+      "frame": {
+        "x": 832,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_blue_left": {
+      "frame": {
+        "x": 864,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_blue_right": {
+      "frame": {
+        "x": 896,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_blue_up": {
+      "frame": {
+        "x": 928,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_green_down": {
+      "frame": {
+        "x": 960,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_green_left": {
+      "frame": {
+        "x": 992,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_green_right": {
+      "frame": {
+        "x": 1024,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_green_up": {
+      "frame": {
+        "x": 1056,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_grey_down": {
+      "frame": {
+        "x": 1088,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_grey_left": {
+      "frame": {
+        "x": 1120,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_grey_right": {
+      "frame": {
+        "x": 1152,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_grey_up": {
+      "frame": {
+        "x": 1184,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_orange_down": {
+      "frame": {
+        "x": 1216,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_orange_left": {
+      "frame": {
+        "x": 1248,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_orange_right": {
+      "frame": {
+        "x": 1280,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_orange_up": {
+      "frame": {
+        "x": 1312,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_purple_down": {
+      "frame": {
+        "x": 1344,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_purple_left": {
+      "frame": {
+        "x": 1376,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_purple_right": {
+      "frame": {
+        "x": 1408,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_purple_up": {
+      "frame": {
+        "x": 1440,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_red_down": {
+      "frame": {
+        "x": 1472,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_red_left": {
+      "frame": {
+        "x": 1504,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_red_right": {
+      "frame": {
+        "x": 1536,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_red_up": {
+      "frame": {
+        "x": 1568,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_teal_down": {
+      "frame": {
+        "x": 1600,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_teal_left": {
+      "frame": {
+        "x": 1632,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_teal_right": {
+      "frame": {
+        "x": 1664,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_teal_up": {
+      "frame": {
+        "x": 1696,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_white_down": {
+      "frame": {
+        "x": 1728,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_white_left": {
+      "frame": {
+        "x": 1760,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_white_right": {
+      "frame": {
+        "x": 1792,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_office_rolling_white_up": {
+      "frame": {
+        "x": 1824,
+        "y": 224,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_chair_chair_orange_down": {
+      "frame": {
+        "x": 1856,
+        "y": 224,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_orange_left": {
+      "frame": {
+        "x": 1888,
+        "y": 224,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_orange_right": {
+      "frame": {
+        "x": 1920,
+        "y": 224,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_chair_chair_orange_up": {
+      "frame": {
+        "x": 1952,
+        "y": 224,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_darkbrown_down": {
+      "frame": {
+        "x": 0,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_darkbrown_left": {
+      "frame": {
+        "x": 128,
+        "y": 288,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_darkbrown_right": {
+      "frame": {
+        "x": 160,
+        "y": 288,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_darkbrown_up": {
+      "frame": {
+        "x": 192,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_green_down": {
+      "frame": {
+        "x": 320,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_green_left": {
+      "frame": {
+        "x": 448,
+        "y": 288,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_green_right": {
+      "frame": {
+        "x": 480,
+        "y": 288,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_green_up": {
+      "frame": {
+        "x": 512,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_grey_down": {
+      "frame": {
+        "x": 640,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_grey_left": {
+      "frame": {
+        "x": 768,
+        "y": 288,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_grey_right": {
+      "frame": {
+        "x": 800,
+        "y": 288,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_grey_up": {
+      "frame": {
+        "x": 832,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_lightbrown_down": {
+      "frame": {
+        "x": 960,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_lightbrown_left": {
+      "frame": {
+        "x": 1088,
+        "y": 288,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_lightbrown_right": {
+      "frame": {
+        "x": 1120,
+        "y": 288,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_lightbrown_up": {
+      "frame": {
+        "x": 1152,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_mediumbrown_down": {
+      "frame": {
+        "x": 1280,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_mediumbrown_left": {
+      "frame": {
+        "x": 1408,
+        "y": 288,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_mediumbrown_right": {
+      "frame": {
+        "x": 1440,
+        "y": 288,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_mediumbrown_up": {
+      "frame": {
+        "x": 1472,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_orange_down": {
+      "frame": {
+        "x": 1600,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_orange_left": {
+      "frame": {
+        "x": 1728,
+        "y": 288,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_orange_right": {
+      "frame": {
+        "x": 1760,
+        "y": 288,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_orange_up": {
+      "frame": {
+        "x": 1792,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_purple_down": {
+      "frame": {
+        "x": 1920,
+        "y": 288,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_purple_left": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_purple_right": {
+      "frame": {
+        "x": 32,
+        "y": 384,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_purple_up": {
+      "frame": {
+        "x": 64,
+        "y": 384,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_red_down": {
+      "frame": {
+        "x": 192,
+        "y": 384,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_red_left": {
+      "frame": {
+        "x": 320,
+        "y": 384,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_red_right": {
+      "frame": {
+        "x": 352,
+        "y": 384,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_red_up": {
+      "frame": {
+        "x": 384,
+        "y": 384,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_teal_down": {
+      "frame": {
+        "x": 512,
+        "y": 384,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_teal_left": {
+      "frame": {
+        "x": 640,
+        "y": 384,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_teal_right": {
+      "frame": {
+        "x": 672,
+        "y": 384,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_teal_up": {
+      "frame": {
+        "x": 704,
+        "y": 384,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_white_down": {
+      "frame": {
+        "x": 832,
+        "y": 384,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_couch_couch_white_left": {
+      "frame": {
+        "x": 960,
+        "y": 384,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_white_right": {
+      "frame": {
+        "x": 992,
+        "y": 384,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_couch_couch_white_up": {
+      "frame": {
+        "x": 1024,
+        "y": 384,
+        "w": 128,
+        "h": 32
+      }
+    },
+    "prod assets_counter_counter_black[1x1]": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_counter_counter_black[1x4]": {
+      "frame": {
+        "x": 1184,
+        "y": 384,
+        "w": 128,
+        "h": 64
+      }
+    },
+    "prod assets_counter_counter_black[2x2]": {
+      "frame": {
+        "x": 1312,
+        "y": 384,
+        "w": 64,
+        "h": 96
+      }
+    },
+    "prod assets_desk_desk_drawer_black_down": {
+      "frame": {
+        "x": 576,
+        "y": 1216,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_black_right": {
+      "frame": {
+        "x": 672,
+        "y": 1216,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_black_up": {
+      "frame": {
+        "x": 768,
+        "y": 1216,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_blue_down": {
+      "frame": {
+        "x": 864,
+        "y": 1216,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_blue_left": {
+      "frame": {
+        "x": 960,
+        "y": 1216,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_blue_right": {
+      "frame": {
+        "x": 1056,
+        "y": 1216,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_blue_up": {
+      "frame": {
+        "x": 1152,
+        "y": 1216,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_darkwood_down": {
+      "frame": {
+        "x": 1248,
+        "y": 1216,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_darkwood_right": {
+      "frame": {
+        "x": 1344,
+        "y": 1216,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_darkwood_up": {
+      "frame": {
+        "x": 1440,
+        "y": 1216,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_green_down": {
+      "frame": {
+        "x": 1536,
+        "y": 1216,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_green_left": {
+      "frame": {
+        "x": 1632,
+        "y": 1216,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_green_right": {
+      "frame": {
+        "x": 1728,
+        "y": 1216,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_green_up": {
+      "frame": {
+        "x": 1824,
+        "y": 1216,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_grey_down": {
+      "frame": {
+        "x": 1920,
+        "y": 1216,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_grey_right": {
+      "frame": {
+        "x": 0,
+        "y": 1344,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_grey_up": {
+      "frame": {
+        "x": 96,
+        "y": 1344,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_lightwood_down": {
+      "frame": {
+        "x": 192,
+        "y": 1344,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_lightwood_right": {
+      "frame": {
+        "x": 288,
+        "y": 1344,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_lightwood_up": {
+      "frame": {
+        "x": 384,
+        "y": 1344,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_mediumwood_down": {
+      "frame": {
+        "x": 480,
+        "y": 1344,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_mediumwood_right": {
+      "frame": {
+        "x": 576,
+        "y": 1344,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_mediumwood_up": {
+      "frame": {
+        "x": 672,
+        "y": 1344,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_orange_down": {
+      "frame": {
+        "x": 768,
+        "y": 1344,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_orange_left": {
+      "frame": {
+        "x": 864,
+        "y": 1344,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_orange_right": {
+      "frame": {
+        "x": 960,
+        "y": 1344,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_orange_up": {
+      "frame": {
+        "x": 1056,
+        "y": 1344,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_purple_down": {
+      "frame": {
+        "x": 1152,
+        "y": 1344,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_purple_left": {
+      "frame": {
+        "x": 1248,
+        "y": 1344,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_purple_right": {
+      "frame": {
+        "x": 1344,
+        "y": 1344,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_purple_up": {
+      "frame": {
+        "x": 1440,
+        "y": 1344,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_red_down": {
+      "frame": {
+        "x": 1536,
+        "y": 1344,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_red_left": {
+      "frame": {
+        "x": 1632,
+        "y": 1344,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_red_right": {
+      "frame": {
+        "x": 1728,
+        "y": 1344,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_red_up": {
+      "frame": {
+        "x": 1824,
+        "y": 1344,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_teal_down": {
+      "frame": {
+        "x": 1920,
+        "y": 1344,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_teal_left": {
+      "frame": {
+        "x": 0,
+        "y": 1472,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_teal_right": {
+      "frame": {
+        "x": 96,
+        "y": 1472,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_teal_up": {
+      "frame": {
+        "x": 192,
+        "y": 1472,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_white_down": {
+      "frame": {
+        "x": 288,
+        "y": 1472,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desk_desk_drawer_white_right": {
+      "frame": {
+        "x": 384,
+        "y": 1472,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_desk_desk_drawer_white_up": {
+      "frame": {
+        "x": 480,
+        "y": 1472,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_copper_down": {
+      "frame": {
+        "x": 416,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_copper_left": {
+      "frame": {
+        "x": 448,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_copper_right": {
+      "frame": {
+        "x": 480,
+        "y": 1696,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_copper_up": {
+      "frame": {
+        "x": 512,
+        "y": 1696,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_darkcopper_down": {
+      "frame": {
+        "x": 544,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_darkcopper_left": {
+      "frame": {
+        "x": 576,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_darkcopper_right": {
+      "frame": {
+        "x": 608,
+        "y": 1696,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_darkcopper_up": {
+      "frame": {
+        "x": 640,
+        "y": 1696,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_green_down": {
+      "frame": {
+        "x": 672,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_green_left": {
+      "frame": {
+        "x": 704,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_green_right": {
+      "frame": {
+        "x": 736,
+        "y": 1696,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_green_up": {
+      "frame": {
+        "x": 768,
+        "y": 1696,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_metal_down": {
+      "frame": {
+        "x": 800,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_metal_left": {
+      "frame": {
+        "x": 832,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_metal_right": {
+      "frame": {
+        "x": 864,
+        "y": 1696,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_desklamp_desklamp_hinged_metal_up": {
+      "frame": {
+        "x": 896,
+        "y": 1696,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_desklamp_desklamp_industrial_aluminum": {
+      "frame": {
+        "x": 928,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_industrial_beige": {
+      "frame": {
+        "x": 960,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_industrial_blue": {
+      "frame": {
+        "x": 992,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_industrial_carbon": {
+      "frame": {
+        "x": 1024,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_industrial_copper": {
+      "frame": {
+        "x": 1056,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desklamp_desklamp_industrial_green": {
+      "frame": {
+        "x": 1088,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_keyboard_black_down": {
+      "frame": {
+        "x": 1120,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_keyboard_black_down-1": {
+      "frame": {
+        "x": 1152,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_keyboard_black_left": {
+      "frame": {
+        "x": 1184,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_keyboard_black_right": {
+      "frame": {
+        "x": 1216,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_keyboard_white_down": {
+      "frame": {
+        "x": 1248,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_keyboard_white_left": {
+      "frame": {
+        "x": 1280,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_keyboard_white_right": {
+      "frame": {
+        "x": 1312,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_keyboard_white_up": {
+      "frame": {
+        "x": 1344,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_black_down_coding": {
+      "frame": {
+        "x": 1376,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_black_down_coding-1": {
+      "frame": {
+        "x": 1408,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_black_right": {
+      "frame": {
+        "x": 1440,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_black_up": {
+      "frame": {
+        "x": 1472,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_blue_down": {
+      "frame": {
+        "x": 1504,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_blue_up": {
+      "frame": {
+        "x": 1536,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_green_down": {
+      "frame": {
+        "x": 1568,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_green_up": {
+      "frame": {
+        "x": 1600,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_grey_down": {
+      "frame": {
+        "x": 1632,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_grey_up": {
+      "frame": {
+        "x": 1664,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_lilac_down": {
+      "frame": {
+        "x": 1696,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_mediumwood_down": {
+      "frame": {
+        "x": 1728,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_orange_down": {
+      "frame": {
+        "x": 1760,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_orange_up": {
+      "frame": {
+        "x": 1792,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_pastelblue_down": {
+      "frame": {
+        "x": 1824,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_pastelblue_up": {
+      "frame": {
+        "x": 1856,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_pink_down": {
+      "frame": {
+        "x": 1888,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_pink_up": {
+      "frame": {
+        "x": 1920,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_purple_down": {
+      "frame": {
+        "x": 1952,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_red_down": {
+      "frame": {
+        "x": 1984,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_red_up": {
+      "frame": {
+        "x": 2016,
+        "y": 1696,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_white_down": {
+      "frame": {
+        "x": 0,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_white_up": {
+      "frame": {
+        "x": 32,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_pride_yellow_down": {
+      "frame": {
+        "x": 64,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_white_down": {
+      "frame": {
+        "x": 96,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_white_down_coding": {
+      "frame": {
+        "x": 128,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_white_down_coding-1": {
+      "frame": {
+        "x": 160,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_white_left": {
+      "frame": {
+        "x": 192,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_white_right": {
+      "frame": {
+        "x": 224,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_monitor_white_up": {
+      "frame": {
+        "x": 256,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_set_black_down": {
+      "frame": {
+        "x": 288,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_set_black_down_coding": {
+      "frame": {
+        "x": 320,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_set_black_down_coding-1": {
+      "frame": {
+        "x": 352,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_set_black_left": {
+      "frame": {
+        "x": 384,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_set_black_right": {
+      "frame": {
+        "x": 416,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_set_black_up": {
+      "frame": {
+        "x": 448,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_set_white_down": {
+      "frame": {
+        "x": 480,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_set_white_down_coding": {
+      "frame": {
+        "x": 512,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_set_white_down_coding-1": {
+      "frame": {
+        "x": 544,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_set_white_left": {
+      "frame": {
+        "x": 576,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_set_white_right": {
+      "frame": {
+        "x": 608,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_desktop_desktop_set_white_up": {
+      "frame": {
+        "x": 640,
+        "y": 1792,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_dresser_dresser_2x2_black_down": {
+      "frame": {
+        "x": 672,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_black_left": {
+      "frame": {
+        "x": 736,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_black_right": {
+      "frame": {
+        "x": 768,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_black_up": {
+      "frame": {
+        "x": 800,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_blue_ left": {
+      "frame": {
+        "x": 864,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_blue_down": {
+      "frame": {
+        "x": 896,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_blue_right": {
+      "frame": {
+        "x": 960,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_blue_up": {
+      "frame": {
+        "x": 992,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_darkwood_down": {
+      "frame": {
+        "x": 1056,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_darkwood_left": {
+      "frame": {
+        "x": 1120,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_darkwood_right": {
+      "frame": {
+        "x": 1152,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_darkwood_up": {
+      "frame": {
+        "x": 1184,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_grey_down": {
+      "frame": {
+        "x": 1248,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_grey_left": {
+      "frame": {
+        "x": 1312,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_grey_right": {
+      "frame": {
+        "x": 1344,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_grey_up": {
+      "frame": {
+        "x": 1376,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_lightwood_down": {
+      "frame": {
+        "x": 1440,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_lightwood_left": {
+      "frame": {
+        "x": 1504,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_lightwood_right": {
+      "frame": {
+        "x": 1536,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_lightwood_up": {
+      "frame": {
+        "x": 1568,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_mediumwood_down": {
+      "frame": {
+        "x": 1632,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_mediumwood_left": {
+      "frame": {
+        "x": 1696,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_mediumwood_right": {
+      "frame": {
+        "x": 1728,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_mediumwood_up": {
+      "frame": {
+        "x": 1760,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_teal_down": {
+      "frame": {
+        "x": 1824,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_teal_left": {
+      "frame": {
+        "x": 1888,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_teal_right": {
+      "frame": {
+        "x": 1920,
+        "y": 1792,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_teal_up": {
+      "frame": {
+        "x": 1952,
+        "y": 1792,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_white_down": {
+      "frame": {
+        "x": 0,
+        "y": 1888,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_2x2_white_left": {
+      "frame": {
+        "x": 64,
+        "y": 1888,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_white_right": {
+      "frame": {
+        "x": 96,
+        "y": 1888,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_2x2_white_up": {
+      "frame": {
+        "x": 128,
+        "y": 1888,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_ darkwood_right": {
+      "frame": {
+        "x": 192,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_black_down": {
+      "frame": {
+        "x": 224,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_black_left": {
+      "frame": {
+        "x": 256,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_black_right": {
+      "frame": {
+        "x": 288,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_black_up": {
+      "frame": {
+        "x": 320,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_blue_down": {
+      "frame": {
+        "x": 352,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_blue_left": {
+      "frame": {
+        "x": 384,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_blue_right": {
+      "frame": {
+        "x": 416,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_blue_up": {
+      "frame": {
+        "x": 448,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_darkwood_down": {
+      "frame": {
+        "x": 480,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_darkwood_left": {
+      "frame": {
+        "x": 512,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_darkwood_up": {
+      "frame": {
+        "x": 544,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_grey_down": {
+      "frame": {
+        "x": 576,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_grey_left": {
+      "frame": {
+        "x": 608,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_grey_right": {
+      "frame": {
+        "x": 640,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_grey_up": {
+      "frame": {
+        "x": 672,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_lightwood_down": {
+      "frame": {
+        "x": 704,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_lightwood_left": {
+      "frame": {
+        "x": 736,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_lightwood_right": {
+      "frame": {
+        "x": 768,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_lightwood_up": {
+      "frame": {
+        "x": 800,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_mediumwood_down": {
+      "frame": {
+        "x": 832,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_mediumwood_left": {
+      "frame": {
+        "x": 864,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_mediumwood_right": {
+      "frame": {
+        "x": 896,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_mediumwood_up": {
+      "frame": {
+        "x": 928,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_teal_down": {
+      "frame": {
+        "x": 960,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_teal_left": {
+      "frame": {
+        "x": 992,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_teal_right": {
+      "frame": {
+        "x": 1024,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_teal_up": {
+      "frame": {
+        "x": 1056,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_white_down": {
+      "frame": {
+        "x": 1088,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_white_left": {
+      "frame": {
+        "x": 1120,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_white_right": {
+      "frame": {
+        "x": 1152,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_small_white_up": {
+      "frame": {
+        "x": 1184,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_black_down": {
+      "frame": {
+        "x": 1216,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_black_left": {
+      "frame": {
+        "x": 1248,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_black_right": {
+      "frame": {
+        "x": 1280,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_black_up": {
+      "frame": {
+        "x": 1312,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_blue_down": {
+      "frame": {
+        "x": 1344,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_blue_left": {
+      "frame": {
+        "x": 1376,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_blue_right": {
+      "frame": {
+        "x": 1408,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_blue_up": {
+      "frame": {
+        "x": 1440,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_darkwood_down": {
+      "frame": {
+        "x": 1472,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_darkwood_left": {
+      "frame": {
+        "x": 1504,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_darkwood_right": {
+      "frame": {
+        "x": 1536,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_darkwood_up": {
+      "frame": {
+        "x": 1568,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_grey_down": {
+      "frame": {
+        "x": 1600,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_grey_left": {
+      "frame": {
+        "x": 1632,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_grey_right": {
+      "frame": {
+        "x": 1664,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_grey_up": {
+      "frame": {
+        "x": 1696,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_lightwood_down": {
+      "frame": {
+        "x": 1728,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_lightwood_left": {
+      "frame": {
+        "x": 1760,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_lightwood_right": {
+      "frame": {
+        "x": 1792,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_lightwood_up": {
+      "frame": {
+        "x": 1824,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_mediumwood_down": {
+      "frame": {
+        "x": 1856,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_mediumwood_left": {
+      "frame": {
+        "x": 1888,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_mediumwood_right": {
+      "frame": {
+        "x": 1920,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_mediumwood_up": {
+      "frame": {
+        "x": 1952,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_teal_down": {
+      "frame": {
+        "x": 1984,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_teal_left": {
+      "frame": {
+        "x": 2016,
+        "y": 1888,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_teal_right": {
+      "frame": {
+        "x": 0,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_teal_up": {
+      "frame": {
+        "x": 32,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_white_down": {
+      "frame": {
+        "x": 64,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_white_left": {
+      "frame": {
+        "x": 96,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_white_right": {
+      "frame": {
+        "x": 128,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_smalldrawers_white_up": {
+      "frame": {
+        "x": 160,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_dresser_dresser_tall_balck_left": {
+      "frame": {
+        "x": 192,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_black_down": {
+      "frame": {
+        "x": 224,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_black_right": {
+      "frame": {
+        "x": 256,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_black_up": {
+      "frame": {
+        "x": 288,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_blue_down": {
+      "frame": {
+        "x": 320,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_blue_left": {
+      "frame": {
+        "x": 352,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_blue_right": {
+      "frame": {
+        "x": 384,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_blue_up": {
+      "frame": {
+        "x": 416,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_darkwood_down": {
+      "frame": {
+        "x": 448,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_darkwood_left": {
+      "frame": {
+        "x": 480,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_darkwood_right": {
+      "frame": {
+        "x": 512,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_darkwood_up": {
+      "frame": {
+        "x": 544,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_grey_down": {
+      "frame": {
+        "x": 576,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_grey_left": {
+      "frame": {
+        "x": 608,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_grey_right": {
+      "frame": {
+        "x": 640,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_grey_up": {
+      "frame": {
+        "x": 672,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_lightwood_down": {
+      "frame": {
+        "x": 704,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_lightwood_left": {
+      "frame": {
+        "x": 736,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_lightwood_right": {
+      "frame": {
+        "x": 768,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_lightwood_up": {
+      "frame": {
+        "x": 800,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_mediumwood_down": {
+      "frame": {
+        "x": 832,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_mediumwood_left": {
+      "frame": {
+        "x": 864,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_mediumwood_right": {
+      "frame": {
+        "x": 896,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_mediumwood_up": {
+      "frame": {
+        "x": 928,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_teal_down": {
+      "frame": {
+        "x": 960,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_teal_left": {
+      "frame": {
+        "x": 992,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_teal_right": {
+      "frame": {
+        "x": 1024,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_teal_up": {
+      "frame": {
+        "x": 1056,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_white_down": {
+      "frame": {
+        "x": 1088,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_white_left": {
+      "frame": {
+        "x": 1120,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_white_right": {
+      "frame": {
+        "x": 1152,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_dresser_dresser_tall_white_up": {
+      "frame": {
+        "x": 1184,
+        "y": 1984,
+        "w": 32,
+        "h": 96
+      }
+    },
+    "prod assets_filecabinet_filecabinet_short_narrow_beige": {
+      "frame": {
+        "x": 1216,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_short_narrow_blue": {
+      "frame": {
+        "x": 1248,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_short_narrow_copper": {
+      "frame": {
+        "x": 1280,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_short_narrow_green": {
+      "frame": {
+        "x": 1312,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_short_narrow_grey": {
+      "frame": {
+        "x": 1344,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_short_wide_beige": {
+      "frame": {
+        "x": 1376,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_short_wide_blue": {
+      "frame": {
+        "x": 1408,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_short_wide_copper": {
+      "frame": {
+        "x": 1440,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_short_wide_green": {
+      "frame": {
+        "x": 1472,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_short_wide_grey": {
+      "frame": {
+        "x": 1504,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_tall_narrow_beige": {
+      "frame": {
+        "x": 1536,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_tall_narrow_blue": {
+      "frame": {
+        "x": 1568,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_tall_narrow_copper": {
+      "frame": {
+        "x": 1600,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_tall_narrow_green": {
+      "frame": {
+        "x": 1632,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_tall_narrow_grey": {
+      "frame": {
+        "x": 1664,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_tall_wide_beige": {
+      "frame": {
+        "x": 1696,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_tall_wide_blue": {
+      "frame": {
+        "x": 1728,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_tall_wide_copper": {
+      "frame": {
+        "x": 1760,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_tall_wide_green": {
+      "frame": {
+        "x": 1792,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_filecabinet_filecabinet_tall_wide_grey": {
+      "frame": {
+        "x": 1824,
+        "y": 1984,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_laptop_laptop_black_down": {
+      "frame": {
+        "x": 1856,
+        "y": 1984,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_laptop_laptop_black_down_gathertown": {
+      "frame": {
+        "x": 1888,
+        "y": 1984,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_laptop_laptop_black_down_gathertown-1": {
+      "frame": {
+        "x": 1920,
+        "y": 1984,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_laptop_laptop_black_left": {
+      "frame": {
+        "x": 1952,
+        "y": 1984,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_laptop_laptop_black_right": {
+      "frame": {
+        "x": 1984,
+        "y": 1984,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_laptop_laptop_black_up": {
+      "frame": {
+        "x": 2016,
+        "y": 1984,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_laptop_laptop_white_down_gathertown": {
+      "frame": {
+        "x": 0,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_laptop_laptop_white_down_gathertown-1": {
+      "frame": {
+        "x": 32,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_laptop_laptop_white_left": {
+      "frame": {
+        "x": 64,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_laptop_laptop_white_right": {
+      "frame": {
+        "x": 96,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_laptop_laptop_white_up": {
+      "frame": {
+        "x": 128,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_monitor_monitor_dual_down": {
+      "frame": {
+        "x": 160,
+        "y": 2080,
+        "w": 64,
+        "h": 32
+      }
+    },
+    "prod assets_monitor_monitor_dual_left": {
+      "frame": {
+        "x": 224,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_monitor_monitor_dual_right": {
+      "frame": {
+        "x": 256,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_monitor_monitor_dual_up": {
+      "frame": {
+        "x": 288,
+        "y": 2080,
+        "w": 64,
+        "h": 32
+      }
+    },
+    "prod assets_monitor_monitor_single_down": {
+      "frame": {
+        "x": 352,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_monitor_monitor_single_left": {
+      "frame": {
+        "x": 384,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_monitor_monitor_single_right": {
+      "frame": {
+        "x": 416,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_monitor_monitor_single_up": {
+      "frame": {
+        "x": 448,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_monitor_monitor_triple_down": {
+      "frame": {
+        "x": 480,
+        "y": 2080,
+        "w": 64,
+        "h": 32
+      }
+    },
+    "prod assets_monitor_monitor_triple_left": {
+      "frame": {
+        "x": 544,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_monitor_monitor_triple_right": {
+      "frame": {
+        "x": 576,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_monitor_monitor_triple_up": {
+      "frame": {
+        "x": 608,
+        "y": 2080,
+        "w": 64,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_arbor_vitae": {
+      "frame": {
+        "x": 672,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_large_black": {
+      "frame": {
+        "x": 704,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_large_blue": {
+      "frame": {
+        "x": 736,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_large_green": {
+      "frame": {
+        "x": 768,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_large_orange": {
+      "frame": {
+        "x": 800,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_large_purple": {
+      "frame": {
+        "x": 832,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_large_red": {
+      "frame": {
+        "x": 864,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_large_teal": {
+      "frame": {
+        "x": 896,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_large_terracotta": {
+      "frame": {
+        "x": 928,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_large_white": {
+      "frame": {
+        "x": 960,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_small_black": {
+      "frame": {
+        "x": 992,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_small_blue": {
+      "frame": {
+        "x": 1024,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_small_green": {
+      "frame": {
+        "x": 1056,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_small_orange": {
+      "frame": {
+        "x": 1088,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_small_purple": {
+      "frame": {
+        "x": 1120,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_small_red": {
+      "frame": {
+        "x": 1152,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_small_teal": {
+      "frame": {
+        "x": 1184,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_small_terracotta": {
+      "frame": {
+        "x": 1216,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_banana_leaf_small_white": {
+      "frame": {
+        "x": 1248,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_bonsai": {
+      "frame": {
+        "x": 1280,
+        "y": 2080,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_cactus_black": {
+      "frame": {
+        "x": 1312,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_black_bloom": {
+      "frame": {
+        "x": 1344,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_blue": {
+      "frame": {
+        "x": 1376,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_blue_bloom": {
+      "frame": {
+        "x": 1408,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_green": {
+      "frame": {
+        "x": 1440,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_green_bloom": {
+      "frame": {
+        "x": 1472,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_orange": {
+      "frame": {
+        "x": 1504,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_orange_bloom": {
+      "frame": {
+        "x": 1536,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_purple": {
+      "frame": {
+        "x": 1568,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_purple_bloom": {
+      "frame": {
+        "x": 1600,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_red": {
+      "frame": {
+        "x": 1632,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_red_bloom": {
+      "frame": {
+        "x": 1664,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_teal": {
+      "frame": {
+        "x": 1696,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_teal_bloom": {
+      "frame": {
+        "x": 1728,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_terracotta": {
+      "frame": {
+        "x": 1760,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_terracotta_bloom": {
+      "frame": {
+        "x": 1792,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_black": {
+      "frame": {
+        "x": 1824,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_black_bloom": {
+      "frame": {
+        "x": 1856,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_blue": {
+      "frame": {
+        "x": 1888,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_blue_bloom": {
+      "frame": {
+        "x": 1920,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_green": {
+      "frame": {
+        "x": 1952,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_green_bloom": {
+      "frame": {
+        "x": 1984,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_orange": {
+      "frame": {
+        "x": 2016,
+        "y": 2080,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_orange_bloom": {
+      "frame": {
+        "x": 0,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_purple": {
+      "frame": {
+        "x": 32,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_purple_bloom": {
+      "frame": {
+        "x": 64,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_red": {
+      "frame": {
+        "x": 96,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_red_bloom": {
+      "frame": {
+        "x": 128,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_teal": {
+      "frame": {
+        "x": 160,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_teal_bloom": {
+      "frame": {
+        "x": 192,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_terracotta": {
+      "frame": {
+        "x": 224,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_terracotta_bloom": {
+      "frame": {
+        "x": 256,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_white": {
+      "frame": {
+        "x": 288,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_triplet_white_bloom": {
+      "frame": {
+        "x": 320,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_black": {
+      "frame": {
+        "x": 352,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_black_bloom": {
+      "frame": {
+        "x": 384,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_blue": {
+      "frame": {
+        "x": 416,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_blue_bloom": {
+      "frame": {
+        "x": 448,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_green": {
+      "frame": {
+        "x": 480,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_green_bloom": {
+      "frame": {
+        "x": 512,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_orange": {
+      "frame": {
+        "x": 544,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_orange_bloom": {
+      "frame": {
+        "x": 576,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_purple": {
+      "frame": {
+        "x": 608,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_purple_bloom": {
+      "frame": {
+        "x": 640,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_red": {
+      "frame": {
+        "x": 672,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_red_bloom": {
+      "frame": {
+        "x": 704,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_teal": {
+      "frame": {
+        "x": 736,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_teal_bloom": {
+      "frame": {
+        "x": 768,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_terracotta": {
+      "frame": {
+        "x": 800,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_terracotta_bloom": {
+      "frame": {
+        "x": 832,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_white": {
+      "frame": {
+        "x": 864,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_twin_white_bloom": {
+      "frame": {
+        "x": 896,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_white": {
+      "frame": {
+        "x": 928,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_cactus_white_bloom": {
+      "frame": {
+        "x": 960,
+        "y": 2144,
+        "w": 32,
+        "h": 32
+      }
+    },
+    "prod assets_plant_plant_potted_birdofparadise": {
+      "frame": {
+        "x": 992,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_floofy_blue": {
+      "frame": {
+        "x": 1024,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_floofy_grey": {
+      "frame": {
+        "x": 1056,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_floofy_terracotta": {
+      "frame": {
+        "x": 1088,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_floofy_white": {
+      "frame": {
+        "x": 1120,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_monstera_blue": {
+      "frame": {
+        "x": 1152,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_monstera_grey": {
+      "frame": {
+        "x": 1184,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_monstera_small_blue": {
+      "frame": {
+        "x": 1216,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_monstera_small_grey": {
+      "frame": {
+        "x": 1248,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_monstera_small_terracotta": {
+      "frame": {
+        "x": 1280,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_monstera_small_white": {
+      "frame": {
+        "x": 1312,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_monstera_terracotta": {
+      "frame": {
+        "x": 1344,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_monstera_white": {
+      "frame": {
+        "x": 1376,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_skinny_blue": {
+      "frame": {
+        "x": 1408,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_skinny_grey": {
+      "frame": {
+        "x": 1440,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_skinny_terracotta": {
+      "frame": {
+        "x": 1472,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_skinny_white": {
+      "frame": {
+        "x": 1504,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_spikey_blue": {
+      "frame": {
+        "x": 1536,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_spikey_grey": {
+      "frame": {
+        "x": 1568,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_spikey_terracotta": {
+      "frame": {
+        "x": 1600,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_plant_plant_potted_spikey_white": {
+      "frame": {
+        "x": 1632,
+        "y": 2144,
+        "w": 32,
+        "h": 64
+      }
+    },
+    "prod assets_printer_commercial_printer_beige": {
+      "frame": {
+        "x": 1664,
+        "y": 2144,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_printer_commercial_printer_darkgrey": {
+      "frame": {
+        "x": 1728,
+        "y": 2144,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_printer_commercial_printer_drabblue": {
+      "frame": {
+        "x": 1792,
+        "y": 2144,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_printer_commercial_printer_lightgrey": {
+      "frame": {
+        "x": 1856,
+        "y": 2144,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_printer_commercial_printer_white": {
+      "frame": {
+        "x": 1920,
+        "y": 2144,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_cabriolle table 3x2 horizontal white": {
+      "frame": {
+        "x": 0,
+        "y": 2208,
+        "w": 160,
+        "h": 92
+      }
+    },
+    "prod assets_table_cabriolle table 3x2 horizontal": {
+      "frame": {
+        "x": 160,
+        "y": 2208,
+        "w": 160,
+        "h": 92
+      }
+    },
+    "prod assets_table_cabriolle table 3x2": {
+      "frame": {
+        "x": 320,
+        "y": 2208,
+        "w": 128,
+        "h": 156
+      }
+    },
+    "prod assets_table_cabriolle table": {
+      "frame": {
+        "x": 448,
+        "y": 2208,
+        "w": 160,
+        "h": 156
+      }
+    },
+    "prod assets_table_table_1x2_black_horizontal": {
+      "frame": {
+        "x": 608,
+        "y": 2208,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x2_black_vertical": {
+      "frame": {
+        "x": 672,
+        "y": 2208,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_1x2_blue_horizontal": {
+      "frame": {
+        "x": 768,
+        "y": 2208,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x2_blue_vertical": {
+      "frame": {
+        "x": 832,
+        "y": 2208,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_1x2_darkwood_horizontal": {
+      "frame": {
+        "x": 928,
+        "y": 2208,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x2_darkwood_vertical": {
+      "frame": {
+        "x": 992,
+        "y": 2208,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_1x2_green_horizontal": {
+      "frame": {
+        "x": 1088,
+        "y": 2208,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x2_green_vertical": {
+      "frame": {
+        "x": 1152,
+        "y": 2208,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_1x2_grey_horizontal": {
+      "frame": {
+        "x": 1248,
+        "y": 2208,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x2_grey_vertical": {
+      "frame": {
+        "x": 1312,
+        "y": 2208,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_1x2_lightwood_horizontal": {
+      "frame": {
+        "x": 1408,
+        "y": 2208,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x2_lightwood_vertical": {
+      "frame": {
+        "x": 1472,
+        "y": 2208,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_1x2_mediumwood_horizontal": {
+      "frame": {
+        "x": 1568,
+        "y": 2208,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x2_mediumwood_vertical": {
+      "frame": {
+        "x": 1632,
+        "y": 2208,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_1x2_orange_horizontal": {
+      "frame": {
+        "x": 1728,
+        "y": 2208,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x2_orange_vertical": {
+      "frame": {
+        "x": 1792,
+        "y": 2208,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_1x2_purple_horizontal": {
+      "frame": {
+        "x": 1888,
+        "y": 2208,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x2_purple_vertical": {
+      "frame": {
+        "x": 1952,
+        "y": 2208,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_1x2_red_horizontal": {
+      "frame": {
+        "x": 0,
+        "y": 2364,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x2_red_vertical": {
+      "frame": {
+        "x": 64,
+        "y": 2364,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_1x2_teal_horizontal": {
+      "frame": {
+        "x": 160,
+        "y": 2364,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x2_teal_vertical": {
+      "frame": {
+        "x": 224,
+        "y": 2364,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_1x2_white_horizontal": {
+      "frame": {
+        "x": 320,
+        "y": 2364,
+        "w": 64,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x2_white_vertical": {
+      "frame": {
+        "x": 384,
+        "y": 2364,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_1x3_black_horizontal": {
+      "frame": {
+        "x": 480,
+        "y": 2364,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x3_black_vertical": {
+      "frame": {
+        "x": 576,
+        "y": 2364,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_black_vertical-1": {
+      "frame": {
+        "x": 672,
+        "y": 2364,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_blue_horizontal": {
+      "frame": {
+        "x": 768,
+        "y": 2364,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x3_blue_vertical": {
+      "frame": {
+        "x": 864,
+        "y": 2364,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_darkwood_horizontal": {
+      "frame": {
+        "x": 960,
+        "y": 2364,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x3_darkwood_vertical": {
+      "frame": {
+        "x": 1056,
+        "y": 2364,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_darkwood_vertical-1": {
+      "frame": {
+        "x": 1152,
+        "y": 2364,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_green_horizontal": {
+      "frame": {
+        "x": 1248,
+        "y": 2364,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x3_green_vertical": {
+      "frame": {
+        "x": 1344,
+        "y": 2364,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_grey_horizontal": {
+      "frame": {
+        "x": 1440,
+        "y": 2364,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x3_grey_vertical": {
+      "frame": {
+        "x": 1536,
+        "y": 2364,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_grey_vertical-1": {
+      "frame": {
+        "x": 1632,
+        "y": 2364,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_lightwood_horizontal": {
+      "frame": {
+        "x": 1728,
+        "y": 2364,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x3_lightwood_vertical": {
+      "frame": {
+        "x": 1824,
+        "y": 2364,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_lightwood_vertical-1": {
+      "frame": {
+        "x": 1920,
+        "y": 2364,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_mediumwood_horizontal": {
+      "frame": {
+        "x": 0,
+        "y": 2492,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x3_mediumwood_vertical": {
+      "frame": {
+        "x": 96,
+        "y": 2492,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_mediumwood_vertical-1": {
+      "frame": {
+        "x": 192,
+        "y": 2492,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_orange_horizontal": {
+      "frame": {
+        "x": 288,
+        "y": 2492,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x3_orange_vertical": {
+      "frame": {
+        "x": 384,
+        "y": 2492,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_purple_horizontal": {
+      "frame": {
+        "x": 480,
+        "y": 2492,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x3_purple_vertical": {
+      "frame": {
+        "x": 576,
+        "y": 2492,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_red_horizontal": {
+      "frame": {
+        "x": 672,
+        "y": 2492,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x3_red_vertical": {
+      "frame": {
+        "x": 768,
+        "y": 2492,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_teal_horizontal": {
+      "frame": {
+        "x": 864,
+        "y": 2492,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x3_teal_vertical": {
+      "frame": {
+        "x": 960,
+        "y": 2492,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_white_horizontal": {
+      "frame": {
+        "x": 1056,
+        "y": 2492,
+        "w": 96,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_1x3_white_vertical": {
+      "frame": {
+        "x": 1152,
+        "y": 2492,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_1x3_white_vertical-1": {
+      "frame": {
+        "x": 1248,
+        "y": 2492,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x2_black": {
+      "frame": {
+        "x": 1344,
+        "y": 2492,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x2_blue": {
+      "frame": {
+        "x": 1472,
+        "y": 2492,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x2_darkwood": {
+      "frame": {
+        "x": 1600,
+        "y": 2492,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x2_green": {
+      "frame": {
+        "x": 1728,
+        "y": 2492,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x2_grey": {
+      "frame": {
+        "x": 1856,
+        "y": 2492,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x2_lightwood": {
+      "frame": {
+        "x": 0,
+        "y": 2620,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x2_mediumwood": {
+      "frame": {
+        "x": 128,
+        "y": 2620,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x2_orange": {
+      "frame": {
+        "x": 256,
+        "y": 2620,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x2_purple": {
+      "frame": {
+        "x": 384,
+        "y": 2620,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x2_red": {
+      "frame": {
+        "x": 512,
+        "y": 2620,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x2_teal": {
+      "frame": {
+        "x": 640,
+        "y": 2620,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x2_white": {
+      "frame": {
+        "x": 768,
+        "y": 2620,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x3_black_horizontal": {
+      "frame": {
+        "x": 896,
+        "y": 2620,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_2x3_black_vertical": {
+      "frame": {
+        "x": 992,
+        "y": 2620,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x3_blue_horizontal": {
+      "frame": {
+        "x": 1120,
+        "y": 2620,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_2x3_blue_vertical": {
+      "frame": {
+        "x": 1216,
+        "y": 2620,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x3_darkwood_horizontal": {
+      "frame": {
+        "x": 1344,
+        "y": 2620,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_2x3_darkwood_vertical": {
+      "frame": {
+        "x": 1440,
+        "y": 2620,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x3_green_horizontal": {
+      "frame": {
+        "x": 1568,
+        "y": 2620,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_2x3_green_vertical": {
+      "frame": {
+        "x": 1664,
+        "y": 2620,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x3_grey_horizontal": {
+      "frame": {
+        "x": 1792,
+        "y": 2620,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_2x3_grey_vertical": {
+      "frame": {
+        "x": 1888,
+        "y": 2620,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x3_lightwood_horizontal": {
+      "frame": {
+        "x": 0,
+        "y": 2748,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_2x3_lightwood_vertical": {
+      "frame": {
+        "x": 96,
+        "y": 2748,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x3_mediumwood_horizontal": {
+      "frame": {
+        "x": 224,
+        "y": 2748,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_2x3_mediumwood_vertical": {
+      "frame": {
+        "x": 320,
+        "y": 2748,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x3_orange_horizontal": {
+      "frame": {
+        "x": 448,
+        "y": 2748,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_2x3_orange_vertical": {
+      "frame": {
+        "x": 544,
+        "y": 2748,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x3_purple_horizontal": {
+      "frame": {
+        "x": 672,
+        "y": 2748,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_2x3_purple_vertical": {
+      "frame": {
+        "x": 768,
+        "y": 2748,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x3_red_horizontal": {
+      "frame": {
+        "x": 896,
+        "y": 2748,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_2x3_red_vertical": {
+      "frame": {
+        "x": 992,
+        "y": 2748,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x3_teal_horizontal": {
+      "frame": {
+        "x": 1120,
+        "y": 2748,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_2x3_teal_vertical": {
+      "frame": {
+        "x": 1216,
+        "y": 2748,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_2x3_white_horizontal": {
+      "frame": {
+        "x": 1344,
+        "y": 2748,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_2x3_white_vertical": {
+      "frame": {
+        "x": 1440,
+        "y": 2748,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_3x3_black": {
+      "frame": {
+        "x": 1568,
+        "y": 2748,
+        "w": 160,
+        "h": 160
+      }
+    },
+    "prod assets_table_table_3x3_blue": {
+      "frame": {
+        "x": 1728,
+        "y": 2748,
+        "w": 160,
+        "h": 160
+      }
+    },
+    "prod assets_table_table_3x3_darkwood": {
+      "frame": {
+        "x": 1888,
+        "y": 2748,
+        "w": 160,
+        "h": 160
+      }
+    },
+    "prod assets_table_table_3x3_green": {
+      "frame": {
+        "x": 0,
+        "y": 2908,
+        "w": 160,
+        "h": 160
+      }
+    },
+    "prod assets_table_table_3x3_grey": {
+      "frame": {
+        "x": 160,
+        "y": 2908,
+        "w": 160,
+        "h": 160
+      }
+    },
+    "prod assets_table_table_3x3_lightwood": {
+      "frame": {
+        "x": 320,
+        "y": 2908,
+        "w": 160,
+        "h": 160
+      }
+    },
+    "prod assets_table_table_3x3_mediumwood": {
+      "frame": {
+        "x": 480,
+        "y": 2908,
+        "w": 160,
+        "h": 160
+      }
+    },
+    "prod assets_table_table_3x3_orange": {
+      "frame": {
+        "x": 640,
+        "y": 2908,
+        "w": 160,
+        "h": 160
+      }
+    },
+    "prod assets_table_table_3x3_purple": {
+      "frame": {
+        "x": 800,
+        "y": 2908,
+        "w": 160,
+        "h": 160
+      }
+    },
+    "prod assets_table_table_3x3_red": {
+      "frame": {
+        "x": 960,
+        "y": 2908,
+        "w": 160,
+        "h": 160
+      }
+    },
+    "prod assets_table_table_3x3_teal": {
+      "frame": {
+        "x": 1120,
+        "y": 2908,
+        "w": 160,
+        "h": 160
+      }
+    },
+    "prod assets_table_table_3x3_white": {
+      "frame": {
+        "x": 1280,
+        "y": 2908,
+        "w": 160,
+        "h": 160
+      }
+    },
+    "prod assets_table_table_fancy_1x2_black_right": {
+      "frame": {
+        "x": 1440,
+        "y": 2908,
+        "w": 128,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_fancy_1x2_black_up": {
+      "frame": {
+        "x": 1568,
+        "y": 2908,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_1x2_darkwood_right": {
+      "frame": {
+        "x": 1664,
+        "y": 2908,
+        "w": 128,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_fancy_1x2_darkwood_up": {
+      "frame": {
+        "x": 1792,
+        "y": 2908,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_1x2_lightwood_right": {
+      "frame": {
+        "x": 1888,
+        "y": 2908,
+        "w": 128,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_fancy_1x2_lightwood_up": {
+      "frame": {
+        "x": 0,
+        "y": 3068,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_1x2_mediumwood_right": {
+      "frame": {
+        "x": 96,
+        "y": 3068,
+        "w": 128,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_fancy_1x2_mediumwood_up": {
+      "frame": {
+        "x": 224,
+        "y": 3068,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_1x2_white_right": {
+      "frame": {
+        "x": 320,
+        "y": 3068,
+        "w": 128,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_fancy_1x2_white_up": {
+      "frame": {
+        "x": 448,
+        "y": 3068,
+        "w": 96,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_2x2_black": {
+      "frame": {
+        "x": 544,
+        "y": 3068,
+        "w": 128,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_2x2_darkwood": {
+      "frame": {
+        "x": 672,
+        "y": 3068,
+        "w": 128,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_2x2_lightwood": {
+      "frame": {
+        "x": 800,
+        "y": 3068,
+        "w": 128,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_2x2_mediumwood": {
+      "frame": {
+        "x": 928,
+        "y": 3068,
+        "w": 128,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_2x2_white": {
+      "frame": {
+        "x": 1056,
+        "y": 3068,
+        "w": 128,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_2x3_black_right": {
+      "frame": {
+        "x": 1184,
+        "y": 3068,
+        "w": 160,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_2x3_black_up": {
+      "frame": {
+        "x": 1344,
+        "y": 3068,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_2x3_darkwood_right": {
+      "frame": {
+        "x": 1472,
+        "y": 3068,
+        "w": 160,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_2x3_darkwood_up": {
+      "frame": {
+        "x": 1632,
+        "y": 3068,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_2x3_lightwood_right": {
+      "frame": {
+        "x": 1760,
+        "y": 3068,
+        "w": 160,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_2x3_lightwood_up": {
+      "frame": {
+        "x": 1920,
+        "y": 3068,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_2x3_mediumwood_right": {
+      "frame": {
+        "x": 0,
+        "y": 3196,
+        "w": 160,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_2x3_mediumwood_up": {
+      "frame": {
+        "x": 160,
+        "y": 3196,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_2x3_white_right": {
+      "frame": {
+        "x": 288,
+        "y": 3196,
+        "w": 160,
+        "h": 96
+      }
+    },
+    "prod assets_table_table_fancy_2x3_white_up": {
+      "frame": {
+        "x": 448,
+        "y": 3196,
+        "w": 128,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_3x1_black_right": {
+      "frame": {
+        "x": 576,
+        "y": 3196,
+        "w": 160,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_fancy_3x1_black_up": {
+      "frame": {
+        "x": 736,
+        "y": 3196,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_3x1_darkwood_right": {
+      "frame": {
+        "x": 832,
+        "y": 3196,
+        "w": 160,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_fancy_3x1_darkwood_up": {
+      "frame": {
+        "x": 992,
+        "y": 3196,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_3x1_lightwood_right": {
+      "frame": {
+        "x": 1088,
+        "y": 3196,
+        "w": 160,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_fancy_3x1_lightwood_up": {
+      "frame": {
+        "x": 1248,
+        "y": 3196,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_3x1_mediumwood_right": {
+      "frame": {
+        "x": 1344,
+        "y": 3196,
+        "w": 160,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_fancy_3x1_mediumwood_up": {
+      "frame": {
+        "x": 1504,
+        "y": 3196,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_3x1_white_right": {
+      "frame": {
+        "x": 1600,
+        "y": 3196,
+        "w": 160,
+        "h": 64
+      }
+    },
+    "prod assets_table_table_fancy_3x1_white_up": {
+      "frame": {
+        "x": 1760,
+        "y": 3196,
+        "w": 96,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_3x3_black": {
+      "frame": {
+        "x": 1856,
+        "y": 3196,
+        "w": 160,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_3x3_darkwood": {
+      "frame": {
+        "x": 0,
+        "y": 3324,
+        "w": 160,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_3x3_lightwood": {
+      "frame": {
+        "x": 160,
+        "y": 3324,
+        "w": 160,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_3x3_mediumwood": {
+      "frame": {
+        "x": 320,
+        "y": 3324,
+        "w": 160,
+        "h": 128
+      }
+    },
+    "prod assets_table_table_fancy_3x3_white": {
+      "frame": {
+        "x": 480,
+        "y": 3324,
+        "w": 160,
+        "h": 128
+      }
+    }
+  }
+}
