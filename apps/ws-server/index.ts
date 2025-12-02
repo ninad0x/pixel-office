@@ -29,6 +29,7 @@ io.on("connection", (socket) => {
 
 
     socket.on("disconnect", () => {
+        socketCount = 0;
         console.log(socket.id, "disconnected");
         io.emit("player-left", { id: socket.id });
     });
