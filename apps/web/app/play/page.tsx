@@ -27,5 +27,5 @@ export default function Play() {
     })();
   }, []);
 
-  return <div ref={phaserRef} style={{ width: "100%", height: "100%" }} />;
+  return <div ref={phaserRef} className="w-full h-screen" />;
 }

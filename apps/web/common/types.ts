@@ -49,10 +49,13 @@ export interface GameStore {
   resetMap: () => void;
 
   players: Record<string, PlayerData>;
-  myId: string | null;
+  myId: string
+  room: string
 
-  setMyId: (id: string) => void;
+  setId: (id: string) => void;
   updatePlayer: (data: PlayerData) => void;
   removePlayer: (id: string) => void;
   clearPlayers: () => void;
+  setRoom: (room: string) => void
+
 }

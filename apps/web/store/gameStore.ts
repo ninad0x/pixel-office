@@ -6,7 +6,8 @@ export const useGameStore = create<GameStore>((set, get) => ({
 
     map: null,
     players: {},
-    myId: null,
+    myId: "",
+    room: "",
 
     setMap: (data) => {
         set({ map: data });
@@ -32,7 +33,8 @@ export const useGameStore = create<GameStore>((set, get) => ({
     resetMap: () => set({ map: null }),
 
 
-    setMyId: (id) => set({ myId: id }),
+    setId: (id) => set({ myId: id }),
+    setRoom: (room) => set({ room: room }),
 
     updatePlayer: (data) =>
         set((s) => ({

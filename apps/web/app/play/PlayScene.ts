@@ -14,6 +14,11 @@ export class PlayScene extends Phaser.Scene {
     D: Phaser.Input.Keyboard.Key
   }
 
+  lastX = 0;
+  lastY = 0;
+  lastMoving = false
+  lastDir = "down"
+
   constructor() {
     super("PlayScene");
   }
@@ -32,9 +37,30 @@ export class PlayScene extends Phaser.Scene {
 
 
   create() {
-    const gameState = useGameStore.getState()
+    const gameState = useGameStore.getState();
+    if (!gameState.myId || !gameState.room) {
+      console.warn("No ID/room found — cannot join!");
+      return;
+    }
+
     const map = gameState.map
     if (!map) return;
+    
+    this.drawFloor(map);
+    this.drawObjects(map);
+    this.player = this.add.sprite(map.spawn.x, map.spawn.y, "avatar", 0);
+    
+    socket.emit("join", { id: gameState.myId, room: gameState.room });
+    gameState.updatePlayer({
+      id: gameState.myId,
+      x: this.player.x,
+      y: this.player.y,
+      direction: "down",
+      moving: false,
+      avatar: "avatar"
+    })
+
+    console.log("id is", gameState.myId);
 
     socket.on("players-in-room", (list: PlayerData[]) => {
       list.forEach(p => gameState.updatePlayer(p) )
@@ -48,14 +74,10 @@ export class PlayScene extends Phaser.Scene {
       gameState.updatePlayer(p);
     });
 
-      socket.on("player-left", ({ id }) => {
-        gameState.removePlayer(id);
-      });
+    socket.on("player-left", ({ id }) => {
+      gameState.removePlayer(id);
+    });
 
-    this.drawFloor(map);
-    this.drawObjects(map);
-
-    this.player = this.add.sprite(map.spawn.x, map.spawn.y, "avatar", 0);
 
     
 
@@ -79,6 +101,8 @@ export class PlayScene extends Phaser.Scene {
   update() {
     const speed = 2.4;
     let moving = false;
+    let direction = this.lastDir
+    const gameState = useGameStore.getState()
 
     const left = this.cursors.left.isDown || this.keys.A.isDown;
     const right = this.cursors.right.isDown || this.keys.D.isDown;
@@ -89,18 +113,26 @@ export class PlayScene extends Phaser.Scene {
       this.player.x -= speed;
       this.player.play("walk-left", true);
       moving = true;
+      direction = "left"
+
     } else if (right) {
       this.player.x += speed;
       this.player.play("walk-right", true);
       moving = true;
+      direction = "right"
+
     } else if (up) {
       this.player.y -= speed;
       this.player.play("walk-up", true);
       moving = true;
+      direction = "up"
+
     } else if (down) {
       this.player.y += speed;
       this.player.play("walk-down", true);
       moving = true;
+      direction = "down"
+
     }
 
     if (!moving) {
@@ -108,27 +140,49 @@ export class PlayScene extends Phaser.Scene {
       if (key) this.player.play(key.replace("walk", "idle"));
     }
 
-    const direction = left ? "left" : right ? "right" : up ? "up" : down ? "down" : lastDir;
-    if (
-      this.player.x !== this.lastX ||
-      this.player.y !== this.lastY ||
-      direction !== this.lastDir ||
-      moving !== this.lastMoving
-    ) {
+    // emit event
+    if (this.player.x !== this.lastX || 
+        this.player.y !== this.lastY ||
+        moving !== this.lastMoving
+      ) {
       socket.emit("move", {
-        id: this.myId,
-        room: this.room,
+        id: gameState.myId,
+        room: gameState.room,
         x: this.player.x,
         y: this.player.y,
         direction,
-        moving,
+        moving
       });
 
       this.lastX = this.player.x;
       this.lastY = this.player.y;
-      this.lastDir = direction;
       this.lastMoving = moving;
+      this.lastDir = direction
     }
+
+
+    // other players
+    const players = useGameStore.getState().players;
+      for (const id in players) {
+        if (id === gameState.myId) continue
+        const p = players[id];
+
+        if (!this.remotePlayers[id]) {
+          this.remotePlayers[id] = this.add.sprite(p.x, p.y, "avatar");
+        }
+
+        const sprite = this.remotePlayers[id];
+        sprite.setPosition(p.x, p.y);
+
+        if (p.moving) {
+          this.remotePlayers[id].play(`walk-${p.direction}`, true);
+        } else {
+          this.remotePlayers[id].stop();
+          this.remotePlayers[id].play(`idle-${p!.direction}`, true);
+        }
+
+      }
+
 
   }
 
@@ -165,7 +219,7 @@ export class PlayScene extends Phaser.Scene {
   drawObjects(map: BaseMapData) {
     const layer = this.add.container();
     map.objects.forEach((o) => {
-      console.log(o.sprite);
+      // console.log(o.sprite);
       const img = this.add.image(o.x, o.y, "objects", o.sprite);
       img.setOrigin(0.5);
       layer.add(img);
