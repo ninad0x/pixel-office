@@ -7,3 +7,71 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+
+model User {
+  id         String       @id @default(uuid())
+  username   String       @unique
+  avatarUrl  String?
+  createdAt  DateTime     @default(now())
+
+  roomPlayers RoomPlayer[]
+  roomChat    RoomChat[]
+}
+
+model Map {
+  id         String       @id @default(uuid())
+  name       String
+  tilesetUrl String
+  metadata   Json         @default("{}")
+
+  rooms Room[]
+}
+
+model Room {
+  id          String      @id @default(uuid())
+  mapId       String
+  name        String
+  maxPlayers  Int         @default(50)
+
+  map          Map        @relation(fields: [mapId], references: [id], onDelete: Cascade)
+  players      RoomPlayer[]
+  objects      RoomObject[]
+  chats        RoomChat[]
+}
+
+model RoomPlayer {
+  roomId      String
+  userId      String
+  x           Int
+  y           Int
+  direction   String      @default("down")
+  lastUpdated DateTime    @default(now())
+
+  room        Room        @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([roomId, userId])
+}
+
+model RoomObject {
+id       String           @id @default(uuid())
+  roomId   String
+  type     String    
+  x        Int
+  y        Int
+  config   Json           @default("{}")
+
+  room      Room          @relation(fields: [roomId], references: [id], onDelete: Cascade)
+}
+
+model RoomChat {
+  id        BigInt        @id @default(autoincrement())
+  roomId    String
+  userId    String?
+  message   String
+  createdAt DateTime      @default(now())
+
+  room      Room          @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  user      User?         @relation(fields: [userId], references: [id], onDelete: SetNull)
+}
