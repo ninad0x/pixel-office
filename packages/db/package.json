@@ -1,8 +1,15 @@
 {
-  "name": "db",
+  "name": "@repo/db",
   "module": "index.ts",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "^1.3.14"
+  },
+  "exports": {
+    "./client": "./index.ts"
+  },
+  "scripts": {
+    "studio": "bun prisma studio",
+    "generate": "prisma generate"
   },
   "peerDependencies": {
     "typescript": "^5"
@@ -10,6 +17,8 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "prisma": "^7.0.1"
+    "@prisma/adapter-pg": "^7.8.0",
+    "@prisma/client": "^7.8.0",
+    "prisma": "^7.8.0"
   }
 }
