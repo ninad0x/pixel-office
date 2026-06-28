@@ -18,6 +18,8 @@ model User {
 
   roomPlayers RoomPlayer[]
   roomChat    RoomChat[]
+  room        Room[]
+  creator     Map[]
 }
 
 model Map {
@@ -25,8 +27,10 @@ model Map {
   name       String
   tilesetUrl String
   metadata   Json         @default("{}")
+  createdBy  String?
 
-  rooms Room[]
+  rooms     Room[]
+  creator   User?       @relation(fields: [createdBy], references: [id], onDelete: SetNull)
 }
 
 model Room {
@@ -34,11 +38,16 @@ model Room {
   mapId       String
   name        String
   maxPlayers  Int         @default(50)
+  createdBy   String
+  isPublic    Boolean     @default(true)
 
   map          Map        @relation(fields: [mapId], references: [id], onDelete: Cascade)
+  creator      User       @relation(fields: [createdBy], references: [id], onDelete: Cascade)
   players      RoomPlayer[]
   objects      RoomObject[]
   chats        RoomChat[]
+
+  @@unique([name, createdBy])
 }
 
 model RoomPlayer {
@@ -48,15 +57,17 @@ model RoomPlayer {
   y           Int
   direction   String      @default("down")
   lastUpdated DateTime    @default(now())
+  joinedAt    DateTime    @default(now())
 
   room        Room        @relation(fields: [roomId], references: [id], onDelete: Cascade)
   user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@id([roomId, userId])
+  @@index([roomId])
 }
 
 model RoomObject {
-id       String           @id @default(uuid())
+  id       String           @id @default(uuid())
   roomId   String
   type     String    
   x        Int
@@ -75,4 +86,6 @@ model RoomChat {
 
   room      Room          @relation(fields: [roomId], references: [id], onDelete: Cascade)
   user      User?         @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([roomId])
 }
