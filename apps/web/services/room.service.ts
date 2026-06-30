@@ -22,10 +22,20 @@ export async function getRooms(userId: string): Promise<RoomWithDetails[]> {
 }
 
 
-export async function createRoom(name: string, mapId: string, userId: string) {
+export async function createRoom(roomName: string, mapId: string, userId: string) {
     return await prisma.room.create({
         data: {
-            name, mapId, createdBy: userId
+            name: roomName, mapId, createdBy: userId
         }
     })
+}
+
+
+export async function deleteRoom(roomId: string, userId: string) {
+    const room = await prisma.room.findUnique({ where: { id: roomId }})
+
+    if (!room) throw new Error("Room does not Exist!")
+    if (room.createdBy !== userId) throw new Error("Unauthorized")
+
+    await prisma.room.delete({ where: { id: roomId }})
 }
