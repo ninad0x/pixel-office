@@ -1,7 +1,6 @@
-package roommanager
+package hub
 
 import (
-	"github.com/ninad0x/pixel-office-ws/internal/message"
 	"github.com/ninad0x/pixel-office-ws/internal/player"
 	"github.com/ninad0x/pixel-office-ws/internal/room"
 )
@@ -28,7 +27,7 @@ func (h *Hub) GetOrCreateRoom(id string) *room.Room {
 	room := &room.Room{
 		Id:      id,
 		Players: make(map[string]*player.Player),
-		Events:  make(chan message.Message),
+		Events:  make(chan player.Event),
 	}
 
 	h.Rooms[id] = room
