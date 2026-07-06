@@ -10,14 +10,21 @@ import (
 )
 
 type Player struct {
-	Id   string
-	X    int
-	Y    int
-	Conn *websocket.Conn
-	Send chan []byte // send to browser
+	Id        string
+	X         float64
+	Y         float64
+	Direction string
+	Moving    bool
+	Conn      *websocket.Conn
+	Send      chan []byte // send to browser
 }
 
-func (p *Player) ReadPump(events chan message.Message) {
+type Event struct {
+	Player *Player
+	Msg    message.Message
+}
+
+func (p *Player) ReadPump(events chan Event) {
 	// reads FROM browser, feeds INTO room
 	ctx := context.Background()
 	for {
@@ -33,12 +40,15 @@ func (p *Player) ReadPump(events chan message.Message) {
 
 		// send from browser to room
 		fmt.Println(msg)
-		events <- m
+		events <- Event{
+			Player: p,
+			Msg:    m,
+		}
 
 	}
 }
 
-func (p *Player) writePump() {
+func (p *Player) WritePump() {
 	// reads FROM send channel, writes TO browser
 	ctx := context.Background()
 	for msg := range p.Send {
