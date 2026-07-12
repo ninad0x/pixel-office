@@ -20,14 +20,48 @@ func (r *Room) Run() {
 
 		switch event.Msg.Op {
 		case message.OpJoin:
-			// handleJoin(r, event)
+			handleJoin(r, event)
 
 		case message.OpMove:
 			handleMove(r, event)
 
 		case message.OpLeave:
-			handleLeave(r, event.Player)
+			handleLeave(r, event)
 		}
+	}
+}
+
+func handleJoin(r *Room, event player.Event) {
+	p := event.Player
+
+	// send existing players to new player
+	for _, other := range r.Players {
+		res, _ := json.Marshal(message.Response{
+			Op: message.OpPlayerJoined,
+			Data: message.PlayerState{
+				Id: other.Id, X: other.X, Y: other.Y,
+				Direction: other.Direction, Moving: other.Moving,
+			},
+		})
+		p.Send <- res
+	}
+
+	// add to room
+	r.Players[p.Id] = p
+
+	// notify others
+	res, _ := json.Marshal(message.Response{
+		Op: message.OpPlayerJoined,
+		Data: message.PlayerState{
+			Id: p.Id, X: p.X, Y: p.Y,
+			Direction: p.Direction, Moving: p.Moving,
+		},
+	})
+	for _, other := range r.Players {
+		if other.Id == p.Id {
+			continue
+		}
+		other.Send <- res
 	}
 }
 
@@ -62,7 +96,8 @@ func handleMove(r *Room, event player.Event) {
 	}
 }
 
-func handleLeave(r *Room, p *player.Player) {
+func handleLeave(r *Room, event player.Event) {
+	p := event.Player
 	delete(r.Players, p.Id)
 	close(p.Send)
 
