@@ -11,6 +11,8 @@ import (
 
 type Player struct {
 	Id        string
+	Username  string
+	Avatar    string
 	X         float64
 	Y         float64
 	Direction string
@@ -39,7 +41,7 @@ func (p *Player) ReadPump(events chan Event) {
 		}
 
 		// send from browser to room
-		fmt.Println(msg)
+		fmt.Println(m)
 		events <- Event{
 			Player: p,
 			Msg:    m,
