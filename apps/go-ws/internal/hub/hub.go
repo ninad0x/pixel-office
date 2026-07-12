@@ -1,6 +1,8 @@
 package hub
 
 import (
+	"fmt"
+
 	"github.com/ninad0x/pixel-office-ws/internal/player"
 	"github.com/ninad0x/pixel-office-ws/internal/room"
 )
@@ -20,10 +22,12 @@ func NewHub() *Hub {
 func (h *Hub) GetOrCreateRoom(id string) *room.Room {
 	// if room exists
 	if room, ok := h.Rooms[id]; ok {
+		fmt.Println("ROOM FOUND")
 		return room
 	}
 
 	// create room instance
+	fmt.Println("CREATING ROOM")
 	room := &room.Room{
 		Id:      id,
 		Players: make(map[string]*player.Player),
