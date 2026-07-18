@@ -44,7 +44,6 @@ model Room {
   map          Map        @relation(fields: [mapId], references: [id], onDelete: Cascade)
   creator      User       @relation(fields: [createdBy], references: [id], onDelete: Cascade)
   players      RoomPlayer[]
-  objects      RoomObject[]
   chats        RoomChat[]
 
   @@unique([name, createdBy])
@@ -64,17 +63,6 @@ model RoomPlayer {
 
   @@id([roomId, userId])
   @@index([roomId])
-}
-
-model RoomObject {
-  id       String           @id @default(uuid())
-  roomId   String
-  type     String    
-  x        Int
-  y        Int
-  config   Json           @default("{}")
-
-  room      Room          @relation(fields: [roomId], references: [id], onDelete: Cascade)
 }
 
 model RoomChat {
