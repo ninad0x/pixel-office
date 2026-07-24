@@ -6,6 +6,7 @@ export const Op = {
   PLAYERS_IN_ROOM: 4,
   PLAYER_JOINED: 5,
   PLAYER_LEFT: 6,
+  PING: 7
 } as const;
 
 export type OpCode = typeof Op[keyof typeof Op];
