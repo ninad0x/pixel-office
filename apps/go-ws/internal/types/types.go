@@ -12,7 +12,6 @@ const (
 	OpPlayersInRoom = 4
 	OpPlayerJoined  = 5
 	OpPlayerLeft    = 6
-	OpPing          = 7
 )
 
 // Incoming data shapes
