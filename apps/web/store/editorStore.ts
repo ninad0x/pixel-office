@@ -1,19 +1,25 @@
+import { MAP_H, MAP_W, GameMap } from "@/lib/schema/map";
+import { EditorStore, ToolType } from "@/types/store";
 import { create } from "zustand";
-import { EditorStore, MAP_H, MAP_W } from "@/types/map";
 
-export const useEditorStore = create<EditorStore>((set) => ({
+const initialMapData = {
   floor: Array.from({ length: MAP_H }, () => Array(MAP_W).fill(-1)),
   collision: Array.from({ length: MAP_H }, () => Array(MAP_W).fill(false)),
   objects: [],
   zones: [],
   spawn: { x: 200, y: 200 },
   version: 1,
+};
 
+export const useEditorStore = create<EditorStore>((set) => ({
+  ...initialMapData,
+  activeTool: "tile",
   selectedTile: null,
   selectedObject: null,
   selectedZoneType: null,
 
-  // tiles
+  setActiveTool: (activeTool: ToolType) => set({ activeTool }),
+
   setTile: (x, y, tile) =>
     set((s) => {
       const f = s.floor.map((r) => [...r]);
@@ -22,12 +28,10 @@ export const useEditorStore = create<EditorStore>((set) => ({
     }),
 
   setAllTiles: (tile) =>
-    set((s) => {
-      const f = s.floor.map(() => Array(MAP_W).fill(tile));
-      return { floor: f };
-    }),
+    set(() => ({
+      floor: Array.from({ length: MAP_H }, () => Array(MAP_W).fill(tile)),
+    })),
 
-  // collision painting
   setCollision: (x, y, blocked) =>
     set((s) => {
       const c = s.collision.map((r) => [...r]);
@@ -35,7 +39,6 @@ export const useEditorStore = create<EditorStore>((set) => ({
       return { collision: c };
     }),
 
-  // objects
   placeObject: (sprite, x, y, width, height) =>
     set((s) => ({
       objects: [
@@ -58,20 +61,43 @@ export const useEditorStore = create<EditorStore>((set) => ({
       objects: s.objects.map((o) => (o.id === id ? { ...o, x, y } : o)),
     })),
 
-  // zones
-  addZone: (zone) =>
-    set((s) => ({ zones: [...s.zones, zone] })),
+  removeObject: (id) =>
+    set((s) => ({
+      objects: s.objects.filter((o) => o.id !== id),
+    })),
+
+  addZone: (zone) => set((s) => ({ zones: [...s.zones, zone] })),
 
   removeZone: (id) =>
     set((s) => ({ zones: s.zones.filter((z) => z.id !== id) })),
 
-  // tool selection
+  setSpawn: (x, y) => set({ spawn: { x, y } }),
+
   setSelectedTile: (tile) =>
-    set({ selectedTile: tile, selectedObject: null, selectedZoneType: null }),
+    set({
+      selectedTile: tile,
+      selectedObject: null,
+      selectedZoneType: null,
+      activeTool: "tile",
+    }),
 
   setSelectedObject: (frame) =>
-    set({ selectedObject: frame, selectedTile: null, selectedZoneType: null }),
+    set({
+      selectedObject: frame,
+      selectedTile: null,
+      selectedZoneType: null,
+      activeTool: "object",
+    }),
 
   setSelectedZoneType: (type) =>
-    set({ selectedZoneType: type, selectedTile: null, selectedObject: null }),
+    set({
+      selectedZoneType: type,
+      selectedTile: null,
+      selectedObject: null,
+      activeTool: "zone",
+    }),
+
+  loadMap: (map: GameMap) => set({ ...map }),
+
+  resetMap: () => set({ ...initialMapData }),
 }));
