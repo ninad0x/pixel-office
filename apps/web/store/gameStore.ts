@@ -1,5 +1,5 @@
+import { GameStore } from "@/types/store";
 import { create } from "zustand";
-import { GameStore } from "../common/types";
 
 
 export const useGameStore = create<GameStore>((set, get) => ({
