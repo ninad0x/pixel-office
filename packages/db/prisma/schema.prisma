@@ -25,7 +25,7 @@ model User {
 model Map {
   id         String       @id @default(uuid())
   name       String
-  tilesetUrl String
+  mapUrl     String
   metadata   Json         @default("{}")
   createdBy  String?
 
