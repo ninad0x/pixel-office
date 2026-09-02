@@ -6,10 +6,12 @@ export const Op = {
   PLAYERS_IN_ROOM: 4,
   PLAYER_JOINED: 5,
   PLAYER_LEFT: 6,
-  PING: 7
+  CALL_START: 7,
+  CALL_END: 8
 } as const;
 
-export type OpCode = typeof Op[keyof typeof Op];
+export type OpCode = (typeof Op)[keyof typeof Op];
+
 
 // Client to Server
 export interface JoinRequest {}
@@ -31,8 +33,10 @@ export interface ClientPayloadMap {
 
 export interface ClientMessage<T extends keyof ClientPayloadMap = keyof ClientPayloadMap> {
   op: T;
-  data: ClientPayloadMap[T];
+  d: ClientPayloadMap[T];
 }
+
+
 
 // Server to Client
 interface PlayerState {
@@ -56,14 +60,20 @@ export interface PlayerLeftData {
   id: string;
 }
 
+export interface CallData {
+  peerId: string
+}
+
 export interface ServerPayloadMap {
   [Op.PLAYERS_IN_ROOM]: PlayersInRoomData;
   [Op.PLAYER_JOINED]: PlayerJoinedData;
   [Op.MOVE]: PlayerMovedData;
   [Op.PLAYER_LEFT]: PlayerLeftData;
+  [Op.CALL_START]: CallData,
+  [Op.CALL_END]: CallData,
 }
 
 export interface ServerMessage<T extends keyof ServerPayloadMap = keyof ServerPayloadMap> {
   op: T;
-  data: ServerPayloadMap[T];
+  d: ServerPayloadMap[T];
 }
