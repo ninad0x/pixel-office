@@ -2,111 +2,154 @@ package room
 
 import (
 	"encoding/json"
+	"fmt"
+	"log"
 
-	"github.com/ninad0x/pixel-office-ws/internal/message"
+	"github.com/coder/websocket"
 	"github.com/ninad0x/pixel-office-ws/internal/player"
+	"github.com/ninad0x/pixel-office-ws/internal/protocol"
+	"github.com/ninad0x/pixel-office-ws/internal/types"
 )
 
 type Room struct {
-	Id      string
-	Players map[string]*player.Player
-	Events  chan player.Event
+	ID           string
+	Players      map[string]*player.Player
+	Events       chan player.Event
+	OnClose      func(roomId string)
+	MeetingZones []ZoneBounds
 }
+
+const (
+	enterRangeSq = 64 * 64   // 2 tiles at 32px
+	exitRangeSq  = 120 * 120 // 5 tiles at 32px
+)
 
 func (r *Room) Run() {
 
-	for {
-		event := <-r.Events
+	for event := range r.Events {
+
+		// fmt.Println("\nEVENT", event.Msg.Op, event.Player.Id)
 
 		switch event.Msg.Op {
-		case message.OpJoin:
+		case types.OpJoin:
 			handleJoin(r, event)
 
-		case message.OpMove:
+		case types.OpMove:
 			handleMove(r, event)
 
-		case message.OpLeave:
+		case types.OpLeave:
 			handleLeave(r, event)
 		}
 	}
+
+	fmt.Println("ROOM CLOSED")
 }
 
 func handleJoin(r *Room, event player.Event) {
 	p := event.Player
 
-	// send existing players to new player
+	if old, exists := r.Players[p.ID]; exists {
+		delete(r.Players, p.ID)
+		old.Conn.Close(websocket.StatusCode(4001), "connected elsewhere")
+		fmt.Printf("player connected elsewhere")
+	}
+
+	existing := make([]*player.Player, 0)
+
 	for _, other := range r.Players {
-		res, _ := json.Marshal(message.Response{
-			Op: message.OpPlayerJoined,
-			Data: message.PlayerState{
-				Id: other.Id, X: other.X, Y: other.Y,
-				Direction: other.Direction, Moving: other.Moving,
-			},
-		})
-		p.Send <- res
+		existing = append(existing, other)
+	}
+
+	// send existing players [] to new player
+	msg, err := protocol.PlayersInRoom(existing)
+	if err != nil {
+		log.Println("encode error:", err)
+		return
+	}
+	log.Println("PLAYERS_IN_ROOM payload:", string(msg))
+
+	select {
+	case p.Send <- msg:
+	default:
+		log.Printf("Client %s buffer full, dropping message", p.ID)
 	}
 
 	// add to room
-	r.Players[p.Id] = p
+	r.Players[p.ID] = p
+	fmt.Println("JOIN", p.ID, "players:", len(r.Players))
 
 	// notify others
-	res, _ := json.Marshal(message.Response{
-		Op: message.OpPlayerJoined,
-		Data: message.PlayerState{
-			Id: p.Id, X: p.X, Y: p.Y,
-			Direction: p.Direction, Moving: p.Moving,
-		},
-	})
+	joined, err := protocol.PlayerJoined(p)
+	if err != nil {
+		log.Println("encode error: ", err)
+		return
+	}
+	log.Println("PLAYER_JOINED payload:", string(joined))
+
 	for _, other := range r.Players {
-		if other.Id == p.Id {
+		if other.ID == p.ID {
 			continue
 		}
-		other.Send <- res
+		other.Send <- joined
 	}
 }
 
 func handleMove(r *Room, event player.Event) {
-	var moveData message.MoveData
-	json.Unmarshal(event.Msg.Data, &moveData)
+	var moveData types.MoveData
+	if err := json.Unmarshal(event.Msg.Data, &moveData); err != nil {
+		log.Println("unmarshal error:", err)
+		return
+	}
 
 	// update player
-	p := r.Players[event.Player.Id]
+	p := r.Players[event.Player.ID]
 	p.X = moveData.X
 	p.Y = moveData.Y
 	p.Direction = moveData.Direction
 	p.Moving = moveData.Moving
 
 	// broadcast
-	res, _ := json.Marshal(message.Response{
-		Op: message.OpMove,
-		Data: message.PlayerState{
-			Id:        p.Id,
-			X:         p.X,
-			Y:         p.Y,
-			Direction: p.Direction,
-			Moving:    p.Moving,
-		},
-	})
+	msg, err := protocol.PlayerMoved(p)
+	if err != nil {
+		log.Println("encode error: ", err)
+		return
+	}
 
 	for _, other := range r.Players {
-		if other.Id == p.Id {
+		if other.ID == p.ID {
 			continue
 		}
-		other.Send <- res
+		other.Send <- msg
 	}
+
+	checkProximity(r, p)
 }
 
 func handleLeave(r *Room, event player.Event) {
 	p := event.Player
-	delete(r.Players, p.Id)
-	close(p.Send)
 
-	res, _ := json.Marshal(message.Response{
-		Op:   message.OpLeave,
-		Data: map[string]string{"id": p.Id},
-	})
+	if current, ok := r.Players[p.ID]; ok && current == p {
+		delete(r.Players, p.ID)
+		fmt.Println("LEAVE", p.ID, "players:", len(r.Players))
+		close(p.Send)
+	}
+
+	msg, err := protocol.PlayerLeave(p.ID)
+	if err != nil {
+		log.Println("encode error: ", err)
+		return
+	}
 
 	for _, other := range r.Players {
-		other.Send <- res
+		select {
+		case other.Send <- msg:
+		default:
+			log.Printf("Client %s buffer full, dropping message", other.ID)
+		}
+	}
+
+	if len(r.Players) == 0 && r.OnClose != nil {
+		r.OnClose(r.ID)
+		close(r.Events)
 	}
 }
