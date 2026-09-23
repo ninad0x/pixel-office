@@ -3,7 +3,6 @@ package player
 import (
 	"context"
 	"encoding/json"
-	"fmt"
 	"log"
 	"time"
 
@@ -12,17 +11,17 @@ import (
 )
 
 type Player struct {
-	Id        string
-	Username  string
-	Avatar    string
-	X         float64
-	Y         float64
-	Direction string
-	Moving    bool
-	Conn      *websocket.Conn
-	Send      chan []byte // send to browser
-	LastSeen  time.Time
-	PingSent  bool
+	ID          string
+	Username    string
+	Avatar      string
+	X           float64
+	Y           float64
+	Direction   string
+	Moving      bool
+	Conn        *websocket.Conn
+	Send        chan []byte // send to browser
+	LastSeen    time.Time
+	ActivePeers map[string]bool
 }
 
 type Event struct {
@@ -50,7 +49,7 @@ func (p *Player) ReadPump(events chan Event) {
 		}
 
 		// send from browser to room
-		fmt.Println(m)
+		// fmt.Println(m)
 		events <- Event{
 			Player: p,
 			Msg:    m,
@@ -85,7 +84,7 @@ func (p *Player) WritePump() {
 			writeCancel()
 
 			if err != nil {
-				log.Printf("write failed for %s: %v", p.Id, err)
+				log.Printf("write failed for %s: %v", p.ID, err)
 				return
 			}
 
@@ -95,7 +94,7 @@ func (p *Player) WritePump() {
 			pingCancel()
 
 			if err != nil {
-				log.Printf("ping failed for %s: %v", p.Id, err)
+				log.Printf("ping failed for %s: %v", p.ID, err)
 				p.Conn.Close(websocket.StatusPolicyViolation, "ping timeout")
 				return
 			}
