@@ -28,8 +28,6 @@ func (r *Room) Run() {
 
 	for event := range r.Events {
 
-		// fmt.Println("\nEVENT", event.Msg.Op, event.Player.Id)
-
 		switch event.Msg.Op {
 		case types.OpJoin:
 			handleJoin(r, event)
@@ -76,7 +74,7 @@ func handleJoin(r *Room, event player.Event) {
 
 	// add to room
 	r.Players[p.ID] = p
-	fmt.Println("JOIN", p.ID, "players:", len(r.Players))
+	// fmt.Println("JOIN", p.ID, "players:", len(r.Players))
 
 	// notify others
 	joined, err := protocol.PlayerJoined(p)
@@ -84,7 +82,7 @@ func handleJoin(r *Room, event player.Event) {
 		log.Println("encode error: ", err)
 		return
 	}
-	log.Println("PLAYER_JOINED payload:", string(joined))
+	// log.Println("PLAYER_JOINED payload:", string(joined))
 
 	for _, other := range r.Players {
 		if other.ID == p.ID {
@@ -122,7 +120,7 @@ func handleMove(r *Room, event player.Event) {
 		other.Send <- msg
 	}
 
-	checkProximity(r, p)
+	checkCalls(r, p)
 }
 
 func handleLeave(r *Room, event player.Event) {

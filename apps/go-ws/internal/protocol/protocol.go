@@ -63,13 +63,13 @@ func PlayersInRoom(players []*player.Player) ([]byte, error) {
 	return encode(types.OpPlayersInRoom, states)
 }
 
-func ProximityJoin(peerID string) ([]byte, error) {
+func CallStart(peerID string) ([]byte, error) {
 	return encode(types.OpCallStart, types.CallData{
 		PeerID: peerID,
 	})
 }
 
-func ProximityLeave(peerID string) ([]byte, error) {
+func CallEnd(peerID string) ([]byte, error) {
 	return encode(types.OpCallEnd, types.CallData{
 		PeerID: peerID,
 	})

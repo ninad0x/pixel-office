@@ -11,17 +11,18 @@ import (
 )
 
 type Player struct {
-	ID          string
-	Username    string
-	Avatar      string
-	X           float64
-	Y           float64
-	Direction   string
-	Moving      bool
-	Conn        *websocket.Conn
-	Send        chan []byte // send to browser
-	LastSeen    time.Time
-	ActivePeers map[string]bool
+	ID            string
+	Username      string
+	Avatar        string
+	X             float64
+	Y             float64
+	Direction     string
+	Moving        bool
+	Conn          *websocket.Conn
+	Send          chan []byte // send to browser
+	LastSeen      time.Time
+	ActivePeers   map[string]bool
+	CurrentZoneID int
 }
 
 type Event struct {
