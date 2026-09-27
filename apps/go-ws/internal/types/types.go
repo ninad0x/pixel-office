@@ -12,6 +12,8 @@ const (
 	OpPlayersInRoom = 4
 	OpPlayerJoined  = 5
 	OpPlayerLeft    = 6
+	OpCallStart     = 7
+	OpCallEnd       = 8
 )
 
 // Incoming data shapes
@@ -35,7 +37,7 @@ type MoveData struct {
 
 // Outgoing shapes
 type PlayerState struct {
-	Id        string  `json:"id"`
+	ID        string  `json:"id"`
 	X         float64 `json:"x"`
 	Y         float64 `json:"y"`
 	Direction string  `json:"direction"`
@@ -49,7 +51,11 @@ type PlayerJoinedData struct {
 }
 
 type PlayerLeftData struct {
-	Id string `json:"id"`
+	ID string `json:"id"`
+}
+
+type CallData struct {
+	PeerID string `json:"peerId"`
 }
 
 type Response struct {
