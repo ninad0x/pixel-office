@@ -10,7 +10,9 @@
       "env": [
         "NODE_ENV",
         "LIVEKIT_API_KEY",
-        "LIVEKIT_API_SECRET"
+        "LIVEKIT_API_SECRET",
+        "LIVEKIT_SERVER_URL",
+        "INTERNAL_API_SECRET"
       ]
     },
     "lint": {
