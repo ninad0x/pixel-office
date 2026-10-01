@@ -3,7 +3,6 @@ package hub
 import (
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
 	"sync"
 
@@ -34,10 +33,19 @@ func (h *Hub) GetOrCreateRoom(id string) *room.Room {
 	}
 
 	// get zones for room
-	zones, err := room.FetchZones(id)
-	if err != nil {
-		log.Printf("failed to fetch zones for room %s: %v", id, err)
-		zones = nil
+	// zones, err := room.FetchZones(id)
+	// if err != nil {
+	// 	log.Printf("failed to fetch zones for room %s: %v", id, err)
+	// 	zones = nil
+	// }
+
+	zone := room.ZoneBounds{
+		ID:   5,
+		Name: "meeting-zone-1",
+		MinX: 705,
+		MaxX: 705 + 318, // 1023
+		MinY: 449,
+		MaxY: 449 + 191, // 640
 	}
 
 	// create room instance
@@ -45,7 +53,7 @@ func (h *Hub) GetOrCreateRoom(id string) *room.Room {
 		ID:           id,
 		Players:      make(map[string]*player.Player),
 		Events:       make(chan player.Event),
-		MeetingZones: zones,
+		MeetingZones: []room.ZoneBounds{zone},
 		OnClose: func(roomId string) {
 			h.mu.Lock()
 			defer h.mu.Unlock()
