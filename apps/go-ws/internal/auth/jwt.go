@@ -2,6 +2,7 @@ package auth
 
 import (
 	"errors"
+	"fmt"
 	"os"
 
 	"github.com/golang-jwt/jwt/v5"
@@ -14,6 +15,7 @@ type Claims struct {
 }
 
 func ParseToken(tokenStr string) (*Claims, error) {
+	fmt.Printf("JWT_SECRET value: %q\n", os.Getenv("JWT_SECRET"))
 	token, err := jwt.ParseWithClaims(
 		tokenStr,
 		&Claims{},
@@ -23,6 +25,7 @@ func ParseToken(tokenStr string) (*Claims, error) {
 	)
 
 	if err != nil || !token.Valid {
+		fmt.Printf("parse error: %v, valid: %v\n", err, token != nil && token.Valid)
 		return nil, errors.New("invalid token")
 	}
 

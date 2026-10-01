@@ -6,7 +6,7 @@ import (
 )
 
 type User struct {
-	Id       string
+	ID       string
 	Username string
 	Avatar   string
 }
@@ -19,7 +19,7 @@ func GetUserById(id string) (*User, error) {
 		 FROM "User" 
 		 WHERE "id"=$1`,
 		id,
-	).Scan(&u.Id, &u.Username, &u.Avatar)
+	).Scan(&u.ID, &u.Username, &u.Avatar)
 	if err != nil {
 		fmt.Println(err)
 		return nil, err

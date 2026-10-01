@@ -11,12 +11,16 @@ import (
 var Pool *pgxpool.Pool
 
 func Connect() error {
+	fmt.Println("DEBUG DB URL:", os.Getenv("DATABASE_URL"))
 	pool, err := pgxpool.New(context.Background(), os.Getenv("DATABASE_URL"))
-	fmt.Println(os.Getenv("DATABASE_URL"))
 	if err != nil {
 		return err
 	}
-	fmt.Println("DB Connected")
+
+	if err := pool.Ping(context.Background()); err != nil {
+		return err
+	}
+
 	Pool = pool
 	return nil
 }
