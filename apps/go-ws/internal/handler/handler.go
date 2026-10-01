@@ -10,23 +10,23 @@ import (
 	"github.com/ninad0x/pixel-office-ws/internal/auth"
 	"github.com/ninad0x/pixel-office-ws/internal/db"
 	"github.com/ninad0x/pixel-office-ws/internal/hub"
-	"github.com/ninad0x/pixel-office-ws/internal/message"
 	"github.com/ninad0x/pixel-office-ws/internal/player"
+	"github.com/ninad0x/pixel-office-ws/internal/types"
 )
 
 func getUserFromRequest(r *http.Request) (*auth.Claims, error) {
-	cookie, err := r.Cookie("auth-token")
-	if err != nil {
-		return nil, errors.New("missing token")
+	ticket := r.URL.Query().Get("ticket")
+	fmt.Printf("raw ticket query: %q\n", ticket)
+	if ticket == "" {
+		return nil, errors.New("missing ticket")
 	}
-	log.Println("cookie found:", cookie.Value[:20])
-	return auth.ParseToken(cookie.Value)
+	return auth.ParseToken(ticket)
 }
 
 func ServeWS(w http.ResponseWriter, r *http.Request, h *hub.Hub) {
+	log.Println("ServeWS called")
 
 	claims, err := getUserFromRequest(r)
-	// claims := auth.Claims{UserId: "255c2f6f-de07-4689-97f6-ccf95c3d68a2"} // test user
 	roomId := r.URL.Query().Get("roomId")
 
 	if err != nil {
@@ -54,14 +54,15 @@ func ServeWS(w http.ResponseWriter, r *http.Request, h *hub.Hub) {
 	}
 	defer conn.Close(websocket.StatusNormalClosure, "")
 
-	log.Println("player connected:", claims.UserId)
+	log.Println("player connected:", claims.Username)
 
 	p := &player.Player{
-		Id:       claims.UserId,
-		Username: user.Username,
-		Avatar:   user.Avatar,
-		Send:     make(chan []byte, 32),
-		Conn:     conn,
+		ID:          claims.UserId,
+		Username:    user.Username,
+		Avatar:      user.Avatar,
+		Send:        make(chan []byte, 32),
+		Conn:        conn,
+		ActivePeers: make(map[string]bool),
 	}
 
 	room := h.GetOrCreateRoom(roomId)
@@ -69,14 +70,14 @@ func ServeWS(w http.ResponseWriter, r *http.Request, h *hub.Hub) {
 	// send join
 	room.Events <- player.Event{
 		Player: p,
-		Msg:    message.Message{Op: message.OpJoin},
+		Msg:    types.Message{Op: types.OpJoin},
 	}
 
 	// handle disconnect when handler returns
 	defer func() {
 		room.Events <- player.Event{
 			Player: p,
-			Msg:    message.Message{Op: message.OpLeave},
+			Msg:    types.Message{Op: types.OpLeave},
 		}
 	}()
 
