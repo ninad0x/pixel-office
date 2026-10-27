@@ -1,25 +1,43 @@
 package main
 
 import (
-	"fmt"
+	"context"
+	"errors"
 	"log"
-	"net/http"
+	"os"
+	"os/signal"
+	"syscall"
 
 	"github.com/joho/godotenv"
-	"github.com/ninad0x/pixel-office-ws/internal/handler"
+
 	"github.com/ninad0x/pixel-office-ws/internal/hub"
+	"github.com/ninad0x/pixel-office-ws/internal/server"
 )
 
 func main() {
+	if err := run(); err != nil {
+		log.Fatal(err)
+	}
+}
+
+func run() error {
 	_ = godotenv.Load()
 
-	h := hub.NewHub()
+	if os.Getenv("JWT_SECRET") == "" {
+		return errors.New("JWT_SECRET is required")
+	}
+	port := getenv("PORT", "8080")
+	adminAddr := getenv("ADMIN_ADDR", "127.0.0.1:6060")
 
-	http.HandleFunc("/ws", func(w http.ResponseWriter, r *http.Request) {
-		handler.ServeWS(w, r, h)
-	})
+	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+	defer stop()
 
-	http.HandleFunc("/debug/state", h.DebugState)
-	fmt.Println("Echo server started at ws://localhost:8080/ws")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	return server.Run(ctx, port, adminAddr, hub.NewHub())
+}
+
+func getenv(key, def string) string {
+	if v := os.Getenv(key); v != "" {
+		return v
+	}
+	return def
 }
