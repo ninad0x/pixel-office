@@ -30,20 +30,35 @@ func (r *Room) Run() {
 
 		switch event.Msg.Op {
 		case types.OpJoin:
-			handleJoin(r, event)
+			r.handleJoin(event)
 
 		case types.OpMove:
-			handleMove(r, event)
+			r.handleMove(event)
 
 		case types.OpLeave:
-			handleLeave(r, event)
+			r.handleLeave(event)
 		}
 	}
 
 	fmt.Println("ROOM CLOSED")
 }
 
-func handleJoin(r *Room, event player.Event) {
+// helper
+func (r *Room) broadcast(msg []byte, exceptID string) {
+	for _, p := range r.Players {
+		if p.ID == exceptID {
+			continue
+		}
+
+		select {
+		case p.Send <- msg:
+		default:
+			log.Printf("Client %s buffer full, dropping message", p.ID)
+		}
+	}
+}
+
+func (r *Room) handleJoin(event player.Event) {
 	p := event.Player
 
 	if old, exists := r.Players[p.ID]; exists {
@@ -72,6 +87,8 @@ func handleJoin(r *Room, event player.Event) {
 		log.Printf("Client %s buffer full, dropping message", p.ID)
 	}
 
+	r.broadcast(msg, "")
+
 	// add to room
 	r.Players[p.ID] = p
 	// fmt.Println("JOIN", p.ID, "players:", len(r.Players))
@@ -84,15 +101,10 @@ func handleJoin(r *Room, event player.Event) {
 	}
 	// log.Println("PLAYER_JOINED payload:", string(joined))
 
-	for _, other := range r.Players {
-		if other.ID == p.ID {
-			continue
-		}
-		other.Send <- joined
-	}
+	r.broadcast(joined, p.ID)
 }
 
-func handleMove(r *Room, event player.Event) {
+func (r *Room) handleMove(event player.Event) {
 	var moveData types.MoveData
 	if err := json.Unmarshal(event.Msg.Data, &moveData); err != nil {
 		log.Println("unmarshal error:", err)
@@ -113,17 +125,12 @@ func handleMove(r *Room, event player.Event) {
 		return
 	}
 
-	for _, other := range r.Players {
-		if other.ID == p.ID {
-			continue
-		}
-		other.Send <- msg
-	}
+	r.broadcast(msg, p.ID)
 
 	checkCalls(r, p)
 }
 
-func handleLeave(r *Room, event player.Event) {
+func (r *Room) handleLeave(event player.Event) {
 	p := event.Player
 
 	if current, ok := r.Players[p.ID]; ok && current == p {
@@ -138,13 +145,7 @@ func handleLeave(r *Room, event player.Event) {
 		return
 	}
 
-	for _, other := range r.Players {
-		select {
-		case other.Send <- msg:
-		default:
-			log.Printf("Client %s buffer full, dropping message", other.ID)
-		}
-	}
+	r.broadcast(msg, p.ID)
 
 	if len(r.Players) == 0 && r.OnClose != nil {
 		r.OnClose(r.ID)
