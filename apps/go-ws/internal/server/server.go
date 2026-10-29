@@ -30,6 +30,8 @@ func Run(ctx context.Context, port, adminAddr string, h *hub.Hub) error {
 	admMux.HandleFunc("/debug/pprof/", pprof.Index)
 	admMux.HandleFunc("/debug/pprof/profile", pprof.Profile)
 	admMux.HandleFunc("/debug/pprof/trace", pprof.Trace)
+	admMux.HandleFunc("/debug/pprof/cmdline", pprof.Cmdline)
+	admMux.HandleFunc("/debug/pprof/symbol", pprof.Symbol)
 	admMux.HandleFunc("/debug/state", h.DebugState)
 	admin := &http.Server{
 		Addr:              adminAddr,
