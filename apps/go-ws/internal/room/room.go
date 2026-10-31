@@ -91,7 +91,6 @@ func (r *Room) handleJoin(event player.Event) {
 
 	// add to room
 	r.Players[p.ID] = p
-	// fmt.Println("JOIN", p.ID, "players:", len(r.Players))
 
 	// notify others
 	joined, err := protocol.PlayerJoined(p)
@@ -99,7 +98,6 @@ func (r *Room) handleJoin(event player.Event) {
 		log.Println("encode error: ", err)
 		return
 	}
-	// log.Println("PLAYER_JOINED payload:", string(joined))
 
 	r.broadcast(joined, p.ID)
 }
@@ -113,6 +111,9 @@ func (r *Room) handleMove(event player.Event) {
 
 	// update player
 	p := r.Players[event.Player.ID]
+	if p != event.Player {
+		return
+	}
 	p.X = moveData.X
 	p.Y = moveData.Y
 	p.Direction = moveData.Direction
@@ -133,10 +134,20 @@ func (r *Room) handleMove(event player.Event) {
 func (r *Room) handleLeave(event player.Event) {
 	p := event.Player
 
-	if current, ok := r.Players[p.ID]; ok && current == p {
-		delete(r.Players, p.ID)
-		fmt.Println("LEAVE", p.ID, "players:", len(r.Players))
-		close(p.Send)
+	if r.Players[p.ID] != p {
+		return
+	}
+
+	delete(r.Players, p.ID)
+	close(p.Send)
+	fmt.Println("LEAVE", p.ID, "players:", len(r.Players))
+
+	if len(r.Players) == 0 {
+		if r.OnClose != nil {
+			r.OnClose(r.ID)
+			close(r.Events)
+		}
+		return // nobody left to notify
 	}
 
 	msg, err := protocol.PlayerLeave(p.ID)
@@ -145,10 +156,5 @@ func (r *Room) handleLeave(event player.Event) {
 		return
 	}
 
-	r.broadcast(msg, p.ID)
-
-	if len(r.Players) == 0 && r.OnClose != nil {
-		r.OnClose(r.ID)
-		close(r.Events)
-	}
+	r.broadcast(msg, "")
 }
