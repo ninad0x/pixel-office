@@ -40,6 +40,7 @@ model Room {
   maxPlayers  Int         @default(25)
   createdBy   String
   isPublic    Boolean     @default(true)
+  shareCode   String      @unique
 
   map          Map        @relation(fields: [mapId], references: [id], onDelete: Cascade)
   creator      User       @relation(fields: [createdBy], references: [id], onDelete: Cascade)
@@ -52,8 +53,8 @@ model Room {
 model RoomPlayer {
   roomId      String
   userId      String
-  x           Int
-  y           Int
+  x           Int         @default(0)
+  y           Int         @default(0)
   direction   String      @default("down")
   lastUpdated DateTime    @default(now())
   joinedAt    DateTime    @default(now())
@@ -63,6 +64,7 @@ model RoomPlayer {
 
   @@id([roomId, userId])
   @@index([roomId])
+  @@index([userId])
 }
 
 model RoomChat {

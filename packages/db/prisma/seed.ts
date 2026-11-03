@@ -6,7 +6,7 @@ const ROOM_CAPACITY = 25;
 async function main() {
   const start = performance.now();
 
-  const count = Number(process.argv[2] ?? 10);
+  const count = Number(process.argv[2] ?? 100);
 
   if (!Number.isInteger(count) || count <= 0) {
     throw new Error("User count must be a positive integer");
@@ -14,21 +14,28 @@ async function main() {
 
   const hashedPassword = await bcrypt.hash("test1234", 10);
 
-  const users = [];
+  const usernames = Array.from(
+    { length: count },
+    (_, i) => `testuser${i + 1}`
+  );
 
-  for (let i = 1; i <= count; i++) {
-    const user = await prisma.user.upsert({
-      where: { username: `testuser${i}` },
-      update: {},
-      create: {
-        username: `testuser${i}`,
-        password: hashedPassword,
-        avatarUrl: "default",
-      },
-    });
+  await prisma.user.createMany({
+    data: usernames.map(username => ({
+      username,
+      password: hashedPassword,
+      avatarUrl: "default",
+    })),
+    skipDuplicates: true,
+  });
 
-    users.push(user);
-  }
+  const users = await prisma.user.findMany({
+    where: { username: { in: usernames } },
+  });
+
+  users.sort(
+    (a, b) =>
+      Number(a.username.slice(8)) - Number(b.username.slice(8))
+  );
 
   const map = await prisma.map.upsert({
     where: { id: "00000000-0000-0000-0000-000000000001" },
@@ -42,7 +49,7 @@ async function main() {
   });
 
   const roomCount = Math.ceil(count / ROOM_CAPACITY);
-  const rooms = [];
+  const rooms = <any>[];
 
   for (let r = 0; r < roomCount; r++) {
     const room = await prisma.room.upsert({
@@ -63,31 +70,24 @@ async function main() {
     rooms.push(room);
   }
 
-  for (let i = 0; i < users.length; i++) {
-    const roomIndex = Math.floor(i / ROOM_CAPACITY);
-    const room = rooms[roomIndex]!;
-    const user = users[i]!;
-
-    await prisma.roomPlayer.upsert({
-      where: { roomId_userId: { roomId: room.id, userId: user.id } },
-      update: {},
-      create: {
-        roomId: room.id,
-        userId: user.id,
-        x: 100,
-        y: 100,
-      },
-    });
-  }
+  await prisma.roomPlayer.createMany({
+    data: users.map((user, i) => ({
+      roomId: rooms[Math.floor(i / ROOM_CAPACITY)]!.id,
+      userId: user.id,
+      x: 100,
+      y: 100,
+    })),
+    skipDuplicates: true,
+  });
 
   console.log(`Seeded ${count} users across ${roomCount} room(s)`);
-  rooms.forEach((r, i) => console.log(`Room ${i}: ${r.id}`));
-  console.log(`Seeding took ${(performance.now() - start).toFixed(2)}ms`);
+  rooms.forEach((r: any, i: any) => console.log(`Room ${i}: ${r.id}`));
+  console.log(`Seeding took ${((performance.now() - start) / 1000).toFixed(2)}s`);
 }
 
 main()
   .catch((e) => {
     console.error(e);
-    process.exit(1);
+    process.exitCode = 1
   })
   .finally(() => prisma.$disconnect());
