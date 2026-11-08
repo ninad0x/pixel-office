@@ -1,5 +1,5 @@
-
-import { Op, ServerMessage } from "@/types/protocol";
+import { ClientPayloadMap, ServerMessage, ServerPayloadMap } from "@/types/protocol";
+import { fetchTicket } from "./fetch-ticket";
 
 class WSManager {
   private conn: WebSocket | null = null;
@@ -7,107 +7,121 @@ class WSManager {
   private listeners: Map<number, Set<(data: any) => void>> = new Map();
   private messageQueue: string[] = [];
   private reconnectAttempts = 0;
-  private heartbeatInterval: ReturnType<typeof setInterval> | null = null;
   private shouldReconnect = true;
-
-  private startHeartBeat = () => {
-    this.heartbeatInterval = setInterval(() => {
-      try {
-        this.conn?.send(JSON.stringify({ op: Op.PING, data: {} }))
-      } catch (error) {
-        console.error("Heartbeat failed ", error)
-      }
-    }, 15 * 1000)
-  }
-
-  private stopHeartBeat = () => {
-    if (this.heartbeatInterval) {
-      clearInterval(this.heartbeatInterval)
-      this.heartbeatInterval = null
-    }
-  }
-
+  private timer: ReturnType<typeof setTimeout> | null = null;
+  private gen = 0; // bumps on connect/disconnect to cancel old async work
+  private static MAX_ATTEMPTS = 6;
 
   private handleMessage = (message: ServerMessage) => {
     const callbacks = this.listeners.get(message.op);
-    callbacks?.forEach((cb) => cb(message.data));
+    callbacks?.forEach((cb) => cb(message.d));
+  };
+
+  private fail = () => {
+    this.shouldReconnect = false;
+    window.location.href = "/dashboard?error=join_failed";
   };
 
   private reconnect = () => {
-    if (!this.roomId) return;
+    if (!this.roomId || !this.shouldReconnect) return;
+    if (this.reconnectAttempts >= WSManager.MAX_ATTEMPTS) return this.fail();
+    const delay =
+      Math.min(1000 * 2 ** this.reconnectAttempts, 15000) + Math.random() * 1000;
     this.reconnectAttempts++;
-    const delay = Math.min(1000 * 2 ** this.reconnectAttempts, 30000);
-    setTimeout(() => this.connect(this.roomId!), delay);
+    this.timer = setTimeout(this.open, delay);
   };
 
   connect = (roomId: string) => {
+    this.disconnect(); // cancel anything old
     this.roomId = roomId;
     this.shouldReconnect = true;
-
-    const url = `${process.env.NEXT_PUBLIC_WS_URL}/ws?roomId=${roomId}`;
-    this.conn = new WebSocket(url);
-
-    this.conn.onopen = () => {
-      // reset reconnectAttempts
-      this.reconnectAttempts = 0
-      // flush queued messages
-      while (this.messageQueue.length > 0) {
-        const msg = this.messageQueue.shift()
-        if (msg) this.conn?.send(msg)
-      }
-
-      // start heartbeat
-      this.startHeartBeat()
-    };
-
-    this.conn.onmessage = (event) => {
-      try {
-        const message = JSON.parse(event.data)
-        this.handleMessage(message)
-      } catch (e) {
-        console.error("Failedto parse WS message, ", e)
-      }
-    };
-
-    this.conn.onclose = () => {
-      // this.stopHeartBeat()
-      if (this.shouldReconnect) {
-        this.reconnect()
-      }
-    };
-
-    this.conn.onerror = (err) => {
-      console.error("WS error", err);
-    };
+    this.reconnectAttempts = 0;
+    this.open();
   };
 
-  send = (op: number, data: any) => {
-    const message = JSON.stringify({ op, data })
+  private open = async () => {
+    const gen = this.gen;
+    const t = await fetchTicket(this.roomId!);
+    if (gen !== this.gen) return; // cancelled while fetching
 
-    if (this.conn?.readyState === WebSocket.OPEN) {
-      this.conn.send(message)
-    } else {
-      this.messageQueue.push(message)
+    if (!t.ok) {
+      if (t.unauthorized) {
+        this.shouldReconnect = false;
+        window.location.href = `/login?next=${encodeURIComponent(window.location.pathname)}`;
+        return;
+      }
+      return t.retry ? this.reconnect() : this.fail();
     }
-  }
+
+    const conn = new WebSocket(
+      `${process.env.NEXT_PUBLIC_WS_URL}/ws?roomId=${this.roomId}&ticket=${t.ticket}`
+    );
+    this.conn = conn;
+
+    conn.onopen = () => {
+      this.reconnectAttempts = 0;
+      this.messageQueue.forEach((m) => conn.send(m));
+      this.messageQueue = [];
+    };
+
+    conn.onmessage = (event) => {
+      try {
+        this.handleMessage(JSON.parse(event.data));
+      } catch (e) {
+        console.error("Failed to parse WS message, ", e);
+      }
+    };
+
+    conn.onclose = (event) => {
+      if (this.conn !== conn) return; // old socket, ignore
+      this.messageQueue = []; // drop stale moves
+      if (event.code === 4001) {
+        console.warn("Connected elsewhere — not reconnecting");
+        this.shouldReconnect = false;
+        return;
+      }
+      this.reconnect();
+    };
+
+    conn.onerror = (err) => console.error("WS error", err);
+  };
+
+  send = <T extends keyof ClientPayloadMap>(op: T, d: ClientPayloadMap[T]) => {
+    const message = JSON.stringify({ op, d });
+    if (this.conn?.readyState === WebSocket.OPEN) {
+      this.conn.send(message);
+    } else {
+      this.messageQueue.push(message);
+    }
+  };
 
   disconnect = () => {
-    this.shouldReconnect = false
-    this.stopHeartBeat()
-    this.conn?.close()
-    this.conn = null
-  }
+    this.shouldReconnect = false;
+    this.gen++;
+    
+    if (this.timer) clearTimeout(this.timer);
+    this.timer = null;
 
-  on = (op: number, callback: (data: any) => void) => {
+    this.messageQueue = []
+
+    this.conn?.close();
+    this.conn = null;
+  };
+
+  on = <T extends keyof ServerPayloadMap>(
+    op: T,
+    callback: (data: ServerPayloadMap[T]) => void
+  ) => {
     if (!this.listeners.has(op)) this.listeners.set(op, new Set());
     this.listeners.get(op)!.add(callback);
   };
 
-  off = (op: number, callback: (data: any) => void) => {
+  off = <T extends keyof ServerPayloadMap>(
+    op: T,
+    callback: (data: ServerPayloadMap[T]) => void
+  ) => {
     this.listeners.get(op)?.delete(callback);
   };
-
 }
 
-
-export const wsManager = new WSManager()
+export const socket = new WSManager();
