@@ -8,11 +8,26 @@ export async function fetchTicket(roomId: string): Promise<TicketResult> {
       `/api/auth/ws-ticket?roomId=${encodeURIComponent(roomId)}`,
       { method: "POST" }
     );
-    if (res.status === 401) return { ok: false, retry: false, unauthorized: true };
-    if (!res.ok) return { ok: false, retry: true };
+
+    // Unauthorized - no session
+    if (res.status === 401)  {
+      return { ok: false, retry: false, unauthorized: true }
+    }
+
+    // no access to room or room does not exist
+    if (res.status === 403 || res.status === 404) {
+      return { ok: false, retry: false }
+    }
+
+    if (!res.ok) {
+      return { ok: false, retry: true }
+    }
+    
     const { ticket } = await res.json();
-    if (!ticket) return { ok: false, retry: true };
+
+    if (!ticket) return { ok: false, retry: true }
     return { ok: true, ticket };
+
   } catch {
     return { ok: false, retry: true };
   }
