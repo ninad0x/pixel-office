@@ -1,20 +1,19 @@
 import { NextRequest, NextResponse } from "next/server"
 import { register } from "@/services/auth.service"
+import { RegisterSchema } from "@/lib/schema/auth"
+import { sessionResponse, authErrorResponse } from "@/lib/auth-http"
 
 export async function POST(req: NextRequest) {
   try {
-    const { username, password } = await req.json()
-    const token = await register(username, password)
+    const parsed = RegisterSchema.safeParse(await req.json().catch(() => null))
+    if (!parsed.success) {
+      return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 })
+    }
+    
+    const token = await register(parsed.data.username, parsed.data.password)
+    return sessionResponse(token)
 
-    const res = NextResponse.json({ success: true }, { status: 201 })
-    res.cookies.set("auth-token", token, {
-      httpOnly: true,
-      sameSite: "lax",
-      secure: process.env.NODE_ENV === "production",
-      maxAge: 60 * 60 * 24 * 7
-    })
-    return res
-  } catch (err: any) {
-    return NextResponse.json({ error: err.message }, { status: 400 })
+  } catch (err) {
+    return authErrorResponse(err)
   }
 }

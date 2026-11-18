@@ -1,3 +1,5 @@
+import "server-only"
+
 import { cookies } from "next/headers"
 import jwt from "jsonwebtoken"
 import { prisma } from "@repo/db/client";
@@ -9,9 +11,12 @@ export async function getSession(): Promise<Session | null> {
   if (!token) return null
 
   let payload: { userId: string; isGuest?: boolean }
-  
+  const secret = process.env.JWT_SECRET
+  if (!secret) throw new Error("JWT_SECRET is not configured")
+
+
   try {
-    payload = jwt.verify(token, process.env.JWT_SECRET!, {
+    payload = jwt.verify(token, secret, {
       algorithms: ["HS256"],
     }) as typeof payload
   } catch {
@@ -24,6 +29,6 @@ export async function getSession(): Promise<Session | null> {
     where: { id: payload.userId },
     select: { id: true },
   })
-  
+
   return user ? { userId: user.id, isGuest: false } : null
 }
